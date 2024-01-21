@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sogdian&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
-@import url("botoes.css");
-@import url("header.css");
-@import url("media_query.css");
-@import url("nav.css");
-@import url("questoes.css");
-@import url("rodape.css");
+@import url("/interanalista/estilos/botoes.css");
+@import url("/interanalista/estilos/header.css");
+@import url("/interanalista/estilos/media_query.css");
+@import url("/interanalista/estilos/nav.css");
+@import url("/interanalista/estilos/questoes.css");
+@import url("/interanalista/estilos/rodape.css");
+
 :root {
     --cor01: #00653D;
     --cor02: #11be7967;
