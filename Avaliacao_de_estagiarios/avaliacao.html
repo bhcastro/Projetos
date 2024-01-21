@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos/style.css">
+        <link rel="shortcut icon" href="imagens/micro_ico.png" type="image/x-icon">
+        <title>Avaliação</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Avaliação de Estágio</h1>
+        </header>
+            <form autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
+                <nav>                 
+                    <!--UNIVERSIDADE-->
+                    <label for="Universidade"><img class="icones" src="imagens/student-24px.png" alt="universidade"></label>
+                    <input id="universidade" name="Universidade" required placeholder="Inst. de Ensino">
+
+                    <!--NOME-->
+                    <label for="Nome"><img class="icones" src="imagens/employee-24px.png" alt="Analista"></label>
+                    <input id="nome" name="Nome" required placeholder="Nome...">
+
+                    <!--SEMESTRE-->
+                    <label for="Semestre"><img class="icones" src="imagens/calendar-24px.png" alt="Data"></label>
+                    <input id="semestre" name="Semestre" required type="text" placeholder="Semestre" style="width: 193px;">
+                </nav>
+                <!-- Início da prova-->
+                <main>       
+                        <!--QUESTÃO 01-->
+                            <div id="questao1">
+                                    <h3 name="Questão_1">1 - Identifique as estruturas:</h3>
+                                <sub>Passe o mouse para ampliar</sub>
+                                <ol type="a">
+                                    <li><input type="text" id="iQUESTA01" name="Imagem_A" placeholder="Digite"><br><img class="imagens" src="imagens/basofilo.jpg" alt="imagem"></li>
+                                
+                                    <li><input type="text" id="iQUESTA01" name="Imagem_B" placeholder="Digite"><br><img class="imagens" src="imagens/linfo.jpg" alt="imagem"></li>
+                                
+                                    <li><input type="text" id="iQUESTA01" name="Imagem_C" placeholder="Digite"><br><img class="imagens" src="imagens/neutro.jpg" alt="imagem"></li>
+
+                                    <li><input type="text" id="iQUESTA01" name="Imagem_D" placeholder="Digite"><br><img class="imagens" src="imagens/oxalato.jpg" alt="imagem"><br></li>
+                                </ol>
+                            </div>
+                        
+                        <!--QUESTÃO 02-->
+                        <div id="questao2">
+                                <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
+                            <ol type="a">
+                                <li>
+                                    <label for="Questão_2_A">
+                                    Qual valor observado?
+                                    </label>
+                                    <input id="iQUESTAO02" name="Questão_2_A" required placeholder="Digite">
+                                </li>
+
+                                <label for="Questão_2_B">
+                                <li>
+                                    <label for="Questão_2_B">
+                                    Este valor está dentro da referência?
+                                    </label>
+                                    <input id="alt_A" name="Questão_2_B" class="radio" value="Sim" type="radio">Sim
+                                    <input id="alt_B" name="Questão_2_B" class="radio" value="Não" type="radio">Não
+                                </li>
+                            </ol>
+                        </div>
+
+                        <!--QUESTÃO 03-->
+                        <div id="questao03">
+                                <h3>3 - Efetue a leitura do esfregaço e responda:</h3>
+                            <table>
+                                <thead>
+                                    <th colspan="2" id="cabecalho">Classifique sua contagem</th>
+                                </thead>
+                                <tr id="titulo">
+                                    <th>Célula</th>
+                                    <th>Quantidade</th>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Blastos">
+                                        <td class="A1">Blastos</td>
+                                    </label>
+                                        <td class="B1"><input id="iQUESTA03" name="Blastos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Mieloblastos">
+                                        <td class="A1">Mieloblastos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Mieloblastos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Promielocitos">
+                                        <td class="A1">Promielócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Promielocitos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Mielocitos">
+                                        <td class="A1">Mielócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Mielocitos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Metamielocitos">
+                                        <td class="A1">Metamielócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Metamielocitos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Bastonetes">
+                                        <td class="A1">Bastonetes</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Bastonetes" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Segmentados">
+                                        <td class="A1">Segmentados</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Segmentados" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Pro-Linfocitos">
+                                        <td class="A1">Pró-Linfócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Pro-Linfocitos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Linfocitos">
+                                        <td class="A1">Linfócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Linfocitos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Linfocitos-Atipicos">
+                                        <td class="A1">Linfócitos Atípicos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Linfocitos-Atipicos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Pro-Monocitos">
+                                        <td class="A1">Pro-Monócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Pro-Monocitos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Monocitos">
+                                        <td class="A1">Monócitos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Monocitos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Eosinofilos">
+                                        <td class="A1" >Eosinófilos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Eosinofilos" type="number"></td>
+                                </tr>
+                                <tr>
+                                    <label for="Basofilos">
+                                        <td class="A1">Basófilos</td>
+                                    </label>
+                                    <td class="B1"><input id="iQUESTA03" name="Basofilos" type="number"></td>
+                                </tr>
+                                <tr class="linha">
+                                    <label for="Total">
+                                        <td class="A1">Total</td>
+                                    </label>
+                                    <td id="total" name="Total">0</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input id="calcular" type="button" value="Calcular">
+                                    </td>
+                                </tr>    
+                            </table>
+                            <ol type="a">
+                                <label for="Questão_3_A">
+                                    <li id="altA">Com RBC de 4.26, qual valor você liberaria? 
+                                </label>
+                                <input id="iQ3altA" name="Questão_3_A" type="number" placeholder="Digite"></li>
+                                <label for="Questão_3_B">
+                                    <li id="altB">Alguma observação relevante?
+                                </label><br><textarea id="iQ3altB" name="Questão_3_B" cols="35" rows="5" placeholder="Digite"></textarea></li>
+                            </ol>
+                        </div>
+                    <input id="enviar" type="submit" value= "Enviar">
+                    <abbr title="Apagar todos os dados"><input id="limpar" type="reset" value="Limpar"></abbr>
+                </main>
+            </form>
+            <footer>
+                <p>Desenvolvido por <a target="_blank" href="https://github.com/bhcastro/"><strong>Bruno Castro</strong></a></p>
+            </footer>
+    </body>
+</html>

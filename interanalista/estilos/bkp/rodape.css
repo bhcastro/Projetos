@@ -1,0 +1,20 @@
+footer {
+    text-align: center;
+    background-color: var(--cor01);
+    color: white;
+    font-family: 'Noto Sans Sogdian', sans-serif;
+    padding: 0.5% 0%;
+}
+
+footer a {
+    font-weight: bold;
+    font-family: var(--fonte-header);
+    text-decoration: none;
+    color: white;
+    padding: 0 5px;
+}
+footer a:hover {
+    background-color: white;
+    color: var(--cor01);
+    border-radius: 40%;
+}
