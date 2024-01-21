@@ -1,11 +1,11 @@
-// let analista = prompt ('Digite seu nome:');
-// document.getElementById('nome').innerHTML = analista;
+let analista = prompt ('Digite seu nome:');
+document.getElementById('nome').innerHTML = analista;
 
-// let matricula = prompt ('Digite seu ID:');
-// document.getElementById('id').innerHTML = matricula;
+let matricula = prompt ('Digite seu ID:');
+document.getElementById('id').innerHTML = matricula;
 
-// let filial = prompt ('Digite sua unidade:');
-// document.getElementById('unidade').innerHTML = filial;
+let filial = prompt ('Digite sua unidade:');
+document.getElementById('unidade').innerHTML = filial;
 
 let data = new Date();
 
