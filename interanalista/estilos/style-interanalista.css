@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sogdian&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
+@import url("botoes.css");
+@import url("header.css");
+@import url("media_query.css");
+@import url("nav.css");
+@import url("questoes.css");
+@import url("rodape.css");
 
 :root {
     --cor01: #00653D;
