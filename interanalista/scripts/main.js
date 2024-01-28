@@ -20,12 +20,11 @@ let ano = data.getFullYear();
 let dataRealizacao = dia + '/' + mes + '/' + ano;
 document.getElementById('data').innerHTML = dataRealizacao;
 
-let zerar = document.getElementById('limpar');
 function limpar() {
     document.getElementById('total');
     total.innerHTML = 0;
 }
-zerar.onclick=limpar;
+document.getElementById('limpar').onclick=limpar;
 
 const valorInferior = 'Valor de células inferior a 100, por favor reveja sua contagem.';
 const valorSuperior = 'Valor de células superior a 100, por favor reveja sua contagem.';
