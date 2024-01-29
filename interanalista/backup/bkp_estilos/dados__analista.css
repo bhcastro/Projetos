@@ -1,0 +1,13 @@
+#dados__analista{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 25px 0px;
+    background-color: var(--cor01);
+    border-bottom: 1px solid var(--cor-bordas);
+}
+
+.icones {
+    padding: 0px 5px 0px 20px;
+    }

@@ -4,60 +4,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="../estilos/style-interanalista.css">
-        <link rel="shortcut icon" href="../imagens/micro_ico.png" type="image/x-icon">
+        
+        <link rel="stylesheet" href="../bkp_estilos/style-interanalista.css">
+        
+        <link rel="shortcut icon" href="../../imagens/micro_ico.png" type="image/x-icon">
         <title>Interanalista</title>
     </head>
 
-    <body>
-        <header id="cabecalho">
-            <h1>Medicina Diagnóstica</h1>
-            <h2>Interanalista</h2>
+    <body class="corpo">
+        <header class="cabecalho">
+            <h1 id="titulo">Avaliação de Hematologia</h1>
         </header>
-        <form autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
-            <nav id="dados__analista">
+        <form class="formulario" autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
+            <section id="dados__analista">
 
                 <!--Unidade-->
                 <label for="Unidade">
-                    <img class="icones" src="../imagens/hospital-24px.png" alt="Unidade">
+                    <img class="icones" src="../../imagens/hospital-24px.png" alt="Unidade">
                 </label>
-                    <span id="unidade" name="Unidade">Sua Unidade aqui</span>
+                    <span class="input__dados" id="Unidade"></span>
 
                 <!--ID-->
                 <label for="Matricula">
-                    <img class="icones" src="../imagens/id-24px.png" alt="ID">
+                    <img class="icones" src="../../imagens/id-24px.png" alt="ID">
                 </label>
-                <span id="id" name="Matricula">Seu ID aqui</span>
+                <span class="input__dados" id="Matricula"></span>
 
                 <!--NOME-->
                 <label for="Nome">
-                    <img class="icones" src="../imagens/employee-24px.png" alt="Analista">
+                    <img class="icones" src="../../imagens/employee-24px.png" alt="Analista">
                 </label>
-                <span id="nome" name="Nome">Seu nome aqui</span>
+                <span class="input__dados" id="Nome"></span>
 
                 <!--DATA DE REALIZAÇÃO-->
-                <label for="Data"><img class="icones" src="../imagens/calendar-24px.png" alt="Data"></label>
-                <span id="data" name="Data">Insira a data de realização</span>
-            </nav>
+                <label for="Data"><img class="icones" src="../../imagens/calendar-24px.png" alt="Data"></label>
+                <span class="input__dados" id="Data"></span>
+            </section>
+
             <!-- Início da prova-->
-            <main>       
+            <main class="conteudo__principal">       
                 <!--QUESTÃO 01-->
-                <div id="questao1">
+                <div class="questoes" id="questao1">
                     <h3 name="Questão_1">1 - Identifique as estruturas:</h3>
                     <sub>Passe o mouse para ampliar</sub>
-                        <ol type="a">
-                            <li><input type="text" name="Imagem_A" placeholder="Digite"><br><img class="imagens" src="../imagens/basofilo.jpg" alt="imagem"></li>
+                        <ol type="I">
+                            <li><input type="text" name="Imagem_A" placeholder="Digite"><br><img class="imagens" src="../../imagens/basofilo.jpg" alt="imagem"></li>
                         
-                            <li><input type="text" name="Imagem_B" placeholder="Digite"><br><img class="imagens" src="../imagens/linfo.jpg" alt="imagem"></li>
+                            <li><input type="text" name="Imagem_B" placeholder="Digite"><br><img class="imagens" src="../../imagens/linfo.jpg" alt="imagem"></li>
                         
-                            <li><input type="text" name="Imagem_C" placeholder="Digite"><br><img class="imagens" src="../imagens/neutro.jpg" alt="imagem"></li>
+                            <li><input type="text" name="Imagem_C" placeholder="Digite"><br><img class="imagens" src="../../imagens/neutro.jpg" alt="imagem"></li>
 
-                            <li><input type="text" name="Imagem_D" placeholder="Digite"><br><img class="imagens" src="../imagens/oxalato.jpg" alt="imagem"><br></li>
+                            <li><input type="text" name="Imagem_D" placeholder="Digite"><br><img class="imagens" src="../../imagens/oxalato.jpg" alt="imagem"><br></li>
                         </ol>
                     </div>
                     
                 <!--QUESTÃO 02-->
-                <div id="questao2">
+                <div class="questoes" id="questao2">
                     <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
                     <ol type="a">
                         <li>
@@ -79,7 +81,7 @@
                 </div>
 
                 <!--QUESTÃO 03-->
-                <div id="questao03">
+                <div class="questoes" id="questao03">
                     <h3>3 - Efetue a leitura do esfregaço e responda:</h3>
                     <table>
                         <caption>
@@ -210,6 +212,6 @@
         <footer>
             <p>Desenvolvido por <a target="_blank" href="https://github.com/bhcastro/">Bruno Castro</a></p>
         </footer>
-        <script src="../scripts/main.js"></script>
+        <!-- <script src="../bkp_scripts/main.js"></script> -->
     </body>
 </html>

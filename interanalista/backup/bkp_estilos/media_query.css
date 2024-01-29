@@ -1,0 +1,116 @@
+@media (max-width: 500px){
+    
+    * main body {
+        padding: 0px;
+        margin: 0px;
+    }
+    /*HEADER*/
+    header {
+        width: 100vw;
+    }
+
+    /*NAV*/
+    nav {
+        width: 100vw;
+        flex-direction: column;
+        padding: 0px 0px 25px 0px;
+        margin-top: -1px;
+    }
+
+    /*BODY*/
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*MAIN*/
+    main {
+        width: 100vw;
+        background-color: var(--cor02);
+        font-size: 0.9em;
+        margin: auto;
+    }
+    main div {
+        box-sizing: border-box;
+        margin: 10px auto;
+        border-radius: 15px;
+        padding-bottom: 0px;
+    }
+
+    /*QUESTÃO 01*/
+    .imagens:hover {
+        width: 200px;
+        height: 200px;
+    }
+    #questao1 {
+        width: 90%;
+    }
+    #questao1 > ol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*QUESTÃO 02*/
+    #questao2 {
+        width: 90%;
+    }
+    #questao2 > ol {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 99%;
+    }
+    #questao2 li {
+        margin: 5px 0px;
+    }
+    .radio {
+        margin: 10px;
+    }
+    #alt_A {
+        margin: 10px auto;
+    }
+    
+
+    /*QUESTÃO 03*/
+    #questao03 {
+        width: 90%;
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+    }
+    caption {
+        margin: 10px;
+    }
+    textarea {
+        width: 95%;
+        margin: 5% auto;
+    }
+    #questao03 ol {
+        text-align: left;
+    }
+    li input {
+        margin: 10px;
+    }
+
+    /*BOTÕES*/
+    #enviar, #limpar {
+        font-size: 0.8em;
+        font-family: var(--fonte-header);
+        border: 2px solid var(--cor01);
+        width: 80px;
+        height: 30px;
+        margin: 2%;
+        border-radius: 15px;
+    }
+    
+    #calcular {
+        font-size: 0.8em;
+        font-family: var(--fonte-header);
+        border: 2px solid var(--cor01);
+        width: 80px;
+        height: 30px;
+        margin: 2%;
+        border-radius: 15px;
+    }
+}

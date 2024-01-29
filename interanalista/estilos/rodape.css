@@ -14,6 +14,7 @@ footer a {
     padding: 0 5px;
 }
 footer a:hover {
+    transition: 0.3s;
     background-color: white;
     color: var(--cor01);
     border-radius: 40%;
