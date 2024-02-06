@@ -1,5 +1,5 @@
 /*BOTÕES*/
-#enviar, #limpar {
+.botoes {
     font-size: 0.9em;
     font-family: var(--fonte-header);
     border: 2px solid var(--cor01);
@@ -8,16 +8,7 @@
     margin: 2%;
     border-radius: 20px;
 }
-
-.botao_tabela {
-    font-size: 0.9em;
-    font-family: var(--fonte-header);
-    border: 2px solid var(--cor01);
-    width: 100px;
-    height: 30px;
-    margin: 2%;
-    border-radius: 20px;
-}
-.botao_tabela:hover {
+.botoes:hover {
     background-color: var(--caixas-preenchimento);
+    cursor: pointer;
 }
