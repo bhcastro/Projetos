@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/calc_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <title>Calculadora</title>
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1 id="titulo">Calculadora de Hematologia</h1>
+        <hr>
+    </header>
+    <main>
+
+        <div class="calculadoras calculadora__eritroblastos">
+            <p>Valor de Leucócitos contados pelo equipamento: <input type="number" step="1" class="valores" id="valor__leuco"></p>
+            <p>Valor de Eritroblastos contados em lâmina: <input type="number" step="1" class="valores" id="valor__ret"></p>
+            <p>Valor de Leucócitos corrigido: <span class="valores leuco__corrigido"></span></p>
+            <input class="botoes calc__eritro" type="button" value="Calcular">
+            <input class="botoes reset" type="button" value="Limpar" onclick="location.reload()">
+            <article id="fontes">Entenda o cálculo, veja as fontes e metodologias clicando <a href="#">aqui</a></article>    
+        </div>
+            
+    </main>
+    <script src="../scripts/calculos.js"></script>
+</body>
+<footer>
+    <p class="rodape">Desenvolvido por Bruno Castro <a target="_blank" href="https://github.com/bhcastro/"><img id="github" src="../imagens/github.png" alt="GitHub Site"></a></p>
+</footer>
+</html>
