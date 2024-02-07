@@ -14,12 +14,10 @@ console.log(leucocitosTotais);
 let eritroblastosTotais = eritroblastos + 100;
 console.log(eritroblastosTotais);
 
-let leucoFinal = Number(document.querySelector('.leuco__corrigido').value);
-
  let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
 console.log(leucocitosCorrigidos);
 
-leucoFinal.value ='leucocitosCorrigidos';
+documet.querySelector('leuco__corrigido').innerHTML = leucocitosCorrigidos;
 
 }
 calculo.onclick = calcular;
