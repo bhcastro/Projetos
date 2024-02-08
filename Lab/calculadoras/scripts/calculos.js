@@ -22,13 +22,8 @@ function calcular(){
     let eritroblastosTotais = Number(eritroblastos) + 100;
     console.log(eritroblastosTotais);
 
-<<<<<<< Updated upstream
- let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
-console.log(leucocitosCorrigidos);
-=======
     let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
     console.log(`Leucos corrigidos ${leucocitosCorrigidos}`);
->>>>>>> Stashed changes
 
     document.querySelector('.leuco__corrigido').value = leucocitosCorrigidos.toFixed(3);
 
