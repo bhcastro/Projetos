@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
+.cabecalho{
+    text-align: center;
+}
+
 #titulo{
+    text-align: center;
     width: fit-content;
     margin: 25px auto;
     font-size: 3.5em;
