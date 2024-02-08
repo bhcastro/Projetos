@@ -9,7 +9,7 @@
     border-radius: 10px;
     border: 0.5px var(--cor-bordas) solid;
     box-shadow: 0px 0px 10px var(--cor-sombras);
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .valores{
     width: 200px;
@@ -19,18 +19,6 @@
 .leuco__corrigido{
     width: 200px;
     font-size: 0.8em;
-}
-
-.botoes{
-    margin: 20px auto;
-    width: 200px;
-    font-size: 0.6em;
-    border-radius: 10px;
-}
-.botoes:hover{
-    cursor: pointer;
-    color: var(--cor-fundo-seletores);
-    background-color: black;
 }
 
 #fontes{

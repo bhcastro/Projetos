@@ -2,23 +2,35 @@ let calculo = document.querySelector('.calc__eritro');
 
 function calcular(){
 
-let leucocitos = Number(document.getElementById('valor__leuco').value);
-console.log(`Leuco: ${leucocitos}`);
+    let leucocitos = document.getElementById('valor__leuco').value;
+    
+    if (leucocitos.length == 0) {
+        alert('Digite o valor de Leucócitos!');        
+    }
+    console.log(`Leuco: ${leucocitos}`);
 
-let eritroblastos = Number(document.getElementById('valor__ret').value);
-console.log(`Eritro: ${eritroblastos}`);
+    let eritroblastos = document.getElementById('valor__ret').value;
+    
+    if (eritroblastos.length == 0) {
+        alert('Digite o valor de Eritroblastos!');        
+    }
+    console.log(`Eritro: ${eritroblastos}`);
 
-let leucocitosTotais = leucocitos * 100;
-console.log(leucocitosTotais);
+    let leucocitosTotais = Number(leucocitos) * 100;
+    console.log(leucocitosTotais);
 
-let eritroblastosTotais = eritroblastos + 100;
-console.log(eritroblastosTotais);
+    let eritroblastosTotais = Number(eritroblastos) + 100;
+    console.log(eritroblastosTotais);
 
+<<<<<<< Updated upstream
  let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
 console.log(leucocitosCorrigidos);
+=======
+    let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
+    console.log(`Leucos corrigidos ${leucocitosCorrigidos}`);
+>>>>>>> Stashed changes
 
-document.querySelector('.leuco__corrigido').innerHTML = leucocitosCorrigidos;
+    document.querySelector('.leuco__corrigido').value = leucocitosCorrigidos.toFixed(3);
 
 }
 calculo.onclick = calcular;
-

@@ -4,6 +4,7 @@
 @import url(header.css);
 @import url(calculadoras.css);
 @import url(rodape.css);
+@import url(botoes.css);
 
 *{
     padding: 0;
@@ -16,6 +17,7 @@
    --cor-bordas: #00000080;
    --cor-sombras:#000000a1;
    --cor-fundo-seletores: #ffffff;
+   --fundo_footer: #0000003b
 }
 
 a{
@@ -26,6 +28,3 @@ a{
 .corpo{
     background-color: var(--cor-fundo);
 }
-
-
-
