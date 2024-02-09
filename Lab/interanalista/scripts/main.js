@@ -1,11 +1,11 @@
-let analista = prompt ('Digite seu nome:');
-document.getElementById('nome').innerHTML = analista;
+// let analista = prompt ('Digite seu nome:');
+// document.getElementById('nome').value = analista;
 
-let matricula = prompt ('Digite seu ID:');
-document.getElementById('id').innerHTML = matricula;
+// let matricula = prompt ('Digite seu ID:');
+// document.getElementById('id').value = matricula;
 
-let filial = prompt ('Digite sua unidade:');
-document.getElementById('unidade').innerHTML = filial;
+// let filial = prompt ('Digite sua unidade:');
+// document.getElementById('unidade').value = filial;
 
 let data = new Date();
 
@@ -18,7 +18,7 @@ mes = mes++ <10? "0" + mes : mes++;
 let ano = data.getFullYear();
 
 let dataRealizacao = dia + '/' + mes + '/' + ano;
-document.getElementById('data').innerHTML = dataRealizacao;
+document.getElementById('data').value = dataRealizacao;
 
 function limpar() {
     document.getElementById('total');
