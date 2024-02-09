@@ -1,14 +1,13 @@
 #dados__analista{
-    font-size: 1.2em;
     display: flex;
+    font-size: 1.2em;
     justify-content: center;
     align-items: center;
     padding: 10px 0px 25px 0px;
     background-color: var(--cor01);
-    border-bottom: 1px solid var(--cor-bordas);
 }
 
-span {
+.seletores {
     font-family: var(--fonte-header);
     font-weight:bold;
 }
