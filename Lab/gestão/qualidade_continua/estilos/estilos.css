@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte_padrao);
+}
+
+:root{
+    --cor_fundo: #354C50;
+    --cor_secundaria: #3794A5;
+    --fonte_padrao: "Rubik", sans-serif;
+}
