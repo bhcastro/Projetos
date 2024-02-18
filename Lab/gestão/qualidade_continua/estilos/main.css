@@ -22,6 +22,7 @@
     background-color: var(--cor_fundo);
     color: var(--cor_fontes);
     font-variant: small-caps;
+    font-size: 2em;
 }
 
 .corpo{
@@ -45,19 +46,20 @@
     box-shadow: 2px 4px 8px 1px var(--cor_secundaria);
     font-weight: 500;
     font-variant: small-caps;
+    font-size: 1.1em;
 }
 
 .seletor__menu{
     text-align: center;
     border-radius: 10px;
-    width: 150px;
+    width: 175px;
 }
 .seletor__menu:hover{
     cursor: pointer;
 }
 
 .seletor__nome{
-    width: 200px;
+    width: 250px;
     padding: 2px;
 }
 
@@ -80,9 +82,11 @@
 .botao__enviar{
     border-radius: 10px;
     padding: 3px;
-    width: 60px;
+    width: 70px;
     font-weight: 500;
     font-variant: small-caps;
+    font-size: 1.1em;
+    margin: 15px auto;
 }
 .botao__enviar:hover{
     cursor: pointer;
@@ -92,13 +96,17 @@
     display: flex;
     margin: 20px auto;
     padding: 3px;
-    width: 75%;
+    width: 30%;
     justify-content: center;
     align-items: center;
     background-color: var(--cor_footer);
     font-weight: 500;
     border: 1px solid var(--cor_fontes);
     border-radius: 25px;
+    font-size: 1.1em;
+}
+.rodape:hover{
+    cursor: default;
 }
 
 .github{
