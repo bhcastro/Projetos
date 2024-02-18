@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte_padrao);
+}
+
+:root{
+    --cor_fundo: #354C50;
+    --cor_secundaria: #3794A5;
+    --fonte_padrao: "Rubik", sans-serif;
+    --cor_fontes: #f0f8ff;
+    --cor_footer: #26373a;
+}
+
+.cabecalho{
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor_fundo);
+    color: var(--cor_fontes);
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+.corpo{
+    width: 100vw;
+    background-color: var(--cor_fundo);
+}
+
+.principal{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px, auto;
+}
+
+.seletor{
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    box-shadow: 2px 4px 8px 1px var(--cor_secundaria);
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 1.1em;
+}
+
+.seletor__menu{
+    text-align: center;
+    border-radius: 10px;
+    width: 175px;
+}
+.seletor__menu:hover{
+    cursor: pointer;
+}
+
+.seletor__nome{
+    width: 250px;
+    padding: 2px;
+}
+
+.seletor__relato{
+    padding: 5px;
+    width: 95%;
+    text-align: justify;
+}
+
+.seletor__anexo{
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+}
+.seletor__anexo:hover{
+    cursor: pointer;
+}
+
+.botao__enviar{
+    border-radius: 10px;
+    padding: 3px;
+    width: 70px;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    margin: 15px auto;
+}
+.botao__enviar:hover{
+    cursor: pointer;
+}
+
+.rodape{
+    display: flex;
+    margin: 20px auto;
+    padding: 3px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor_footer);
+    font-weight: 500;
+    border: 1px solid var(--cor_fontes);
+    border-radius: 25px;
+    font-size: 1.1em;
+}
+.rodape:hover{
+    cursor: default;
+}
+
+.github{
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <title>Não conformidade</title>
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1 class="titulo">Formulário de abertura de não conformidade</h1>
+        <hr>
+    </header>
+    <form action="https://formspree.io/f/xjvqwaad" method="post">
+        <main class="principal">
+            <select name="Setor da ocorrência: " class="seletor seletor__menu">
+                <option class="seletores__seletor">Selecione o setor</option>
+                <option class="seletores__seletor" name="Coleta">Coleta</option>
+                <option class="seletores__seletor" name="Microbiologia">Microbiologia</option>
+                <option class="seletores__seletor" name="Recepção">Recepção</option>
+                <option class="seletores__seletor" name="Técnica">Técnica</option>
+            </select>
+            <input class="seletor seletor__nome" type="text" name="Solicitante" placeholder="Digite seu nome (Opcional)">
+            <textarea name="Relato" class="seletor seletor__relato" rows="10" placeholder="Descreva o ocorrido"></textarea>
+            <!-- <input type="file" name="Arquivo" class="seletor__anexo"> -->
+            <input class="botao__enviar" type="submit" value="Enviar">
+        </main>
+    </form>
+    <footer class="rodape">
+        Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../imagens/github.png" alt="GoitHub" class="github"></a>
+    </footer>
+</body>
+</html>
