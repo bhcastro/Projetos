@@ -1,16 +1,43 @@
-@import url("style-interanalista.css");
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sogdian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url(cabecalho.css);
+@import url(footer.css);
+@import url(media.css);
 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-texto);
+}
+
+:root {
+    --cor01: #00653D;
+    --cor02: #11be7967;
+    --cor-main: #ffffff;
+    --cor-fundo-questoes: #eeecec;
+    --cor-bordas: rgb(0 0 0 / 5%);
+    --fonte-header: 'Noto Sans Sogdian';
+    --fonte-texto: 'Ubuntu';
+    --caixas-preenchimento: rgb(215, 250, 215);
+    --sombra-caixas: rgb(0 0 0 / 15%);
+}
+
+.corpo{
+    background-color: var(--cor02);
+}
 .seletores{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor-main);
 }
 
 .seletores__setor{
     text-align: center;
-    justify-content: center;
-    width: 25%;
+    width: 30%;
     margin: 20px auto;
     padding: 10px;   
     font-size: 3em;
@@ -47,3 +74,22 @@
     color: transparent;
 }
 
+@media (max-width: 690px){
+    .seletores__setor{
+        width: 100%;
+        font-size: 2em;
+    }
+    .cabecalho{
+        font-size: 1em;
+    }
+    .rodape{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1024px){
+    .seletores__setor{
+        width: 50%;
+        font-size: 2em;
+    }
+}
