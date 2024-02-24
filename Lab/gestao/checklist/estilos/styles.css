@@ -5,10 +5,11 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background-color: var(--cor-fundo);
+    box-sizing: border-box;
 }
 
 :root{
+    --transparencia-80: rgb(255, 255, 255, 0.8);
     --cor-fonte: #ffffff;
     --cor-fundo: #5E7D64;
     --cor-completo: #3FFC68;
@@ -23,14 +24,61 @@
     padding: 5px;
     text-align: center;
     width: 700px;
-    font-size: 2em;
-    color: var(--cor-fonte);
-    border-radius: 25%;
-    border: 1px var(--cor-borda) solid;
-    
+    font-size: 2rem;
+    color: black;
 }
 
 .titulo{
     width: fit-content;
     margin: auto;
+}
+
+#linha{
+    text-align: center;
+    width: 100%;
+    margin: auto;   
+}
+
+.corpo{
+    text-align: center;
+    margin: auto;
+    background: url(../img/background_5.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    width: 60%;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px var(--cor-borda);
+}
+
+.lista__tarefas{
+    list-style: none;
+}
+
+.tarefas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #00000073;
+    background-color: var(--transparencia-80);
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.tarefas:hover{
+background-color: var(--cor-completo);
+box-shadow: 0px 0px 5px 5px var(--cor-borda);
+text-decoration: line-through;
+}
+
+.imagens{
+    height: 25px;
 }
