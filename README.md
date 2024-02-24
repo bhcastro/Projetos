@@ -7,3 +7,5 @@ Clique <a href="https://bhcastro.github.io/Projetos/Lab/interanalista/index/hema
 Clique <a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/index/calculadoras.html">aqui</a> para acessar a calculadora de eritroblastos.
 
 Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/qualidade_continua/index/nao_conformidade.html">aqui</a> para acessar a abertura de não conformidade!
+
+Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/checklist/index/index.html">aqui</a> para acessar o checklist diário!
