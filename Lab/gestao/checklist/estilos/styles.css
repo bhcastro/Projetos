@@ -69,7 +69,6 @@
     border-radius: 30px;
     box-shadow: 0px 0px 15px #00000073;
     background-color: var(--transparencia-80);
-    cursor: pointer;
     font-weight: bold;
     
 }
@@ -81,4 +80,5 @@ text-decoration: line-through;
 
 .imagens{
     height: 25px;
+    cursor: pointer;
 }
