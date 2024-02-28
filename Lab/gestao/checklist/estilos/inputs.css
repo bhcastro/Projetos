@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 800px;
+}
+
+.inputs{
+    margin: 15px;
+    padding: 20px 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #00000073;
+    background-color: var(--transparencia-80);
+    border: none;
+    outline: none;
+}
+
+.nova__tarefa{
+    width: 650px;
+    padding: 10px;
+}
+.botao__adicionar, .botao__limpar{
+    cursor: pointer;
+}
+.botao__adicionar:hover{
+    background-color: var(--cor-completo);
+    transition: 0.6s;
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+
+}
+.botao__limpar:hover{
+    background-color: var(--cor-incompleto);
+    transition: 0.6s;
+    background-image: url(../img/trash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
