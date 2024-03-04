@@ -8,4 +8,4 @@ Clique <a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/index/calcu
 
 Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/qualidade_continua/index/nao_conformidade.html" target="_blank">aqui</a> para acessar a abertura de não conformidade!
 
-Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/checklist/index/index.html" target="_blank">aqui</a> para acessar o checklist diário!
+Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/todo/index/index.html">aqui</a> para acessar o checklist diário!

@@ -3,8 +3,7 @@
     font-family: var(--fonte-header);
     font-size: 1.5em;
     text-align: center;
-    background-color: var(--cor01);
     background: linear-gradient(to top, var(--cor01), transparent);
-    padding: 25px 0px;
-    text-shadow: 5px 5px 10px #0000004d;
+    padding: 20px 0px 0px 0px;
+    cursor: default;
 }
