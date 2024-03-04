@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 @import url(cabecalho.css);
 @import url(footer.css);
+@import url(nav.css);
 
 * {
     margin: 0;
@@ -14,7 +15,6 @@
     --cor01: #00653D;
     --cor02: #11be7967;
     --cor-main: #ffffff;
-    --cor-fundo-questoes: #eeecec;
     --cor-bordas: rgb(0 0 0 / 5%);
     --fonte-header: 'Noto Sans Sogdian';
     --fonte-texto: 'Ubuntu';

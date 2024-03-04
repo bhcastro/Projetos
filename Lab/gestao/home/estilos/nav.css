@@ -1,0 +1,33 @@
+.links{
+    text-decoration: none;
+    color: black;
+}
+li:hover{
+    background-color: var(--cor-main);
+}
+li:hover .links{
+    color: var(--cor01);
+}
+
+
+.seletor{
+    margin: 10px auto 0px auto;
+}
+
+.seletor__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+li{
+    display: flex;
+    padding: 5px 10px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
