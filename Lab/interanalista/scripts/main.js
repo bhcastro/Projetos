@@ -1,11 +1,11 @@
 // let analista = prompt ('Digite seu nome:');
-// document.getElementById('nome').innerHTML = analista;
+// document.getElementById('nome').value = analista;
 
 // let matricula = prompt ('Digite seu ID:');
-// document.getElementById('id').innerHTML = matricula;
+// document.getElementById('id').value = matricula;
 
 // let filial = prompt ('Digite sua unidade:');
-// document.getElementById('unidade').innerHTML = filial;
+// document.getElementById('unidade').value = filial;
 
 let data = new Date();
 
@@ -18,18 +18,15 @@ mes = mes++ <10? "0" + mes : mes++;
 let ano = data.getFullYear();
 
 let dataRealizacao = dia + '/' + mes + '/' + ano;
-document.getElementById('data').innerHTML = dataRealizacao;
-
-function limpar() {
-    document.getElementById('total');
-    total.innerHTML = 0;
-}
-document.getElementById('limpar').onclick=limpar;
-
-const valorInferior = 'Valor de células inferior a 100, por favor reveja sua contagem.';
-const valorSuperior = 'Valor de células superior a 100, por favor reveja sua contagem.';
+document.getElementById('data').value = dataRealizacao;
 
 let totalCelulas = document.getElementById('calcular');
+
+/*function zerar() {
+    let total = document.getElementById('total');
+    total.innerHTML = "";
+}*/
+
 function somar() {
     let cel1 = Number(document.getElementById('cel_1').value);
     let cel2 = Number(document.getElementById('cel_2').value);
@@ -47,11 +44,16 @@ function somar() {
     let cel14 = Number(document.getElementById('cel_14').value);
 
     let soma = cel1 + cel2 + cel3 + cel4 + cel5 + cel6 + cel7 + cel8 + cel9 + cel10 + cel11 + cel12 + cel13 + cel14;
-    document.getElementById('total').innerHTML = soma;
+
+    const valorInferior = `Valor inferior a 100, por favor reveja sua contagem! Células contadas: ${soma}`;
+    const valorSuperior = `Valor superior a 100, por favor reveja sua contagem! Células contadas: ${soma}`;
+    total.innerHTML = soma;
     if (soma < 100){
         alert(valorInferior);
+        total.innerHTML = '';
     }else if(soma > 100){
         alert(valorSuperior);
+        total.innerHTML = '';
         }
 }
-totalCelulas.onclick = somar;
+

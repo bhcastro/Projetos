@@ -35,7 +35,7 @@
                 <div id="questao1">
                     <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
 
-                        <ol class="lista__q1" type="a">
+                        <ul class="lista__q1">
                             <li><input class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens" src="../imagens/basofilo.jpg" alt="imagem"></li>
                         
                             <li><input class="inputs" type="text" name="Imagem B" placeholder="Digite"><br><img class="imagens" src="../imagens/linfo.jpg" alt="imagem"></li>
@@ -43,23 +43,23 @@
                             <li><input class="inputs" type="text" name="Imagem C" placeholder="Digite"><br><img class="imagens" src="../imagens/neutro.jpg" alt="imagem"></li>
 
                             <li><input class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens" src="../imagens/oxalato.jpg" alt="imagem"><br></li>
-                        </ol>
+                        </ul>
                     </div>
                     
                 <!--QUESTÃO 02-->
                 <div id="questao2">
                     <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
-                    <ol type="a">
+                    <ul class="lista__q2">
                         <li>
                             Qual valor observado?
-                            <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Questão 2, Aleternativa A" placeholder="Ex.: 1,23" step="0.1">
+                            <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos" placeholder="Ex.: 1.23" step="0.1">
                         </li>
                         <li>
                             Este valor está dentro da referência?
-                            <input name="Questão 2, Aleternativa B" class="radio" value="Sim" type="radio">Sim
-                            <input name="Questão 2, Aleternativa B" class="radio" value="Não" type="radio">Não
+                            <input name="Valor dentro da referência?" class="radio" value="Sim" type="radio">Sim
+                            <input name="Valor dentro da referência?" class="radio" value="Não" type="radio">Não
                         </li>
-                    </ol>
+                    </ul>
                 </div>
 
                 <!--QUESTÃO 03-->
@@ -136,20 +136,25 @@
                                 <td id="total" name="Total"></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input class = "botoes botao_tabela" id="calcular" type="button" value="Calcular"></td>
-                                <!--<td><input class = "botoes botao_tabela" id="zerar" type="button" value="Zerar"></td>-->
+                                <td colspan="2"><input class = "botoes botao_tabela" id="calcular" type="button" value="Calcular" onclick="somar()"></td>
+                                <!-- <td><input class = "botoes botao_tabela" id="zerar__tabela" type="button" value="Zerar" onclick="zerar()"></td> -->
                             </tr>
                         </tfoot>    
                     </table>
-                    <ol type="a">
+                    <ul class="lista__q3">
                         <li id="altA">
-                            Com RBC de <span></span>, qual valor de plaquetas você liberaria?
-                            <input class="inputs" name="Questão 3, Aleternativa A" type="number" placeholder="Ex.: 123.000">
+                            Levando em consideração o valor de RBC, qual valor de plaquetas você liberaria?
                         </li>
-                        <li>Alguma observação relevante?<br>
-                            <textarea name="Questão 3, Aleternativa B" cols="50" rows="5" placeholder="Ex.: Macroplaquetas, Dacriócitos, etc."></textarea>
+                        <li>
+                            <input class="inputs input__plaquetas" name="Plaquetas contadas" type="number" placeholder="Ex.: 123.000">
                         </li>
-                    </ol>
+                        <li>
+                            Alguma observação relevante?
+                        </li>
+                        <li>
+                            <textarea name="Observações" cols="50" rows="5" placeholder="Ex.: Macroplaquetas, Dacriócitos, etc."></textarea>
+                        </li>
+                    </ul>
                 </div>
                 <span class="div__botoes">
                     <input class="botoes" id="enviar" type="submit" value= "Enviar">

@@ -8,11 +8,11 @@
     height: auto;
     border-radius: 20px;
     padding: 2px;
-
+    cursor: pointer;
 }
 .botoes:hover {
     background-color: var(--caixas-preenchimento);
-    cursor: pointer;
+
 }
 
 .div__botoes{

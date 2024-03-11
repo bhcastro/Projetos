@@ -1,7 +1,7 @@
 .inputs{
-    width: 175px;
+    width: 195px;
     border: 1px var(--cor01) solid;
-    padding: 0.7rem;
+    padding: 0.1rem;
     margin: 15px auto;
 }
 
@@ -9,12 +9,12 @@
 #questao1 {
     width: 85%;
 }
-#questao1 ol {
+.lista__q1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    list-style-position: inside;
+    list-style: none;
     padding: 3px;
 }
 
@@ -22,6 +22,7 @@
     width: 200px;
     height: 200px;
     border-radius: 25px;
+    border: 1px var(--cor01) solid;
 }
 
 
@@ -30,23 +31,30 @@
     width: 85%;
 }
 
-#questao2 ol {
+.lista__q2{
     text-align: left;
     list-style-position: inside;
+    list-style: none;
     padding: 15px;
 }
 
 .radio {
-    width: auto;
-    height: auto;
+    width: 15px;
+    height: 15px;
     box-shadow: none;
     margin: 5px;
 }
 
 /*QUESTÃO 03*/
 #questao03 {
-    box-sizing: border-box;
     width: 85%;
+}
+
+.lista__q3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
 }
 
 /*QUESTÃO 03 - TABELA*/
@@ -85,7 +93,3 @@ th, td {
     background-color: transparent;
 }
 
-#questao03 ol {
-    list-style-position: inside;
-    text-align: left;
-}

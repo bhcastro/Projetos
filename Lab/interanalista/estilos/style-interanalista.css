@@ -4,7 +4,6 @@
 
 @import url("botoes.css");
 @import url("cabecalho.css");
-@import url("media_query.css");
 @import url("nav.css");
 @import url("questoes.css");
 @import url("footer.css");
@@ -13,7 +12,6 @@
     margin: 0;
     padding: 0;
     font-family: var(--fonte-texto);
-    box-sizing: border-box;
 }
 
 :root {
@@ -26,11 +24,6 @@
     --fonte-texto: 'Ubuntu';
     --caixas-preenchimento: rgb(215, 250, 215);
     --sombra-caixas: rgb(0 0 0 / 15%);
-}
-
-.formulario{
-
-    margin: auto;
 }
 
 input, select {
@@ -62,7 +55,6 @@ textarea {
 
 .corpo {
     background-color: #11be7967;
-    margin: auto;
 }
 /*MAIN*/
 main {
@@ -85,4 +77,145 @@ main div {
     border-radius: 30px 30px;
     box-shadow: 5px 5px 10px var(--sombra-caixas);
     border: 0.5px solid var(--cor-bordas);
+}
+
+@media (max-width: 500px){
+    
+    * main body {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    /*HEADER*/
+    .cabecalho{
+        width: 100vw;
+    }
+
+    /*NAV*/
+    nav {
+        flex-direction: column;
+        width: 100vw;
+        padding: 0px 0px 25px 0px;
+        margin-top: -1px;
+    }
+
+    .seletores{
+        margin: 10px auto;
+    }
+
+    /*BODY*/
+    body {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 98vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    /*MAIN*/
+    main {
+        width: 100%;
+        background-color: transparent;
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    main div {
+        margin: 10px auto;
+        border-radius: 15px;
+        padding-bottom: 0px;
+    }
+
+    /*QUESTÃO 01*/
+    #questao1{
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .lista__q1{
+        flex-direction: column;
+    }
+
+    .imagens{
+        width: 200px;
+        height: 200px;
+    }
+
+    /*QUESTÃO 02*/
+    #questao2 {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .lista__q2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 99%;
+        padding: 10px 0;
+    }
+    #questao2 li {
+        margin: 5px auto;
+    }
+    .radio {
+        margin: 10px;
+    }
+    #alt_A {
+        margin: 10px auto;
+    }
+    
+
+    /*QUESTÃO 03*/
+    #questao03 {
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lista__q3{
+        text-align: center;
+        list-style: none;
+    }
+
+    table {
+        width: 90%;
+    }
+    textarea {
+        width: 95%;
+        margin: 10px auto;
+    }
+    li input {
+        margin: 10px;
+    }
+
+    /*BOTÕES*/
+    .div__botoes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .botoes {
+        text-align: center;
+        font-size: 1rem;
+        padding: 2px;
+        font-family: var(--fonte-header);
+        border: 2px solid var(--cor01);
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .rodape{
+        text-align: center;
+        width: 75%;
+        margin: 20px auto;
+        font-size: 1rem;
+        padding: 2px 5px;
+    }
 }
