@@ -1,4 +1,9 @@
-#dados__analista{
+
+.dados__analista{
+    display: none;
+}
+
+.mostrar__nav{
     display: flex;
     font-size: 1.2rem;
     justify-content: space-around;

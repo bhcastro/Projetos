@@ -1,31 +1,36 @@
-// let analista = prompt ('Digite seu nome:');
-// document.getElementById('nome').value = analista;
+function iniciar(){
 
-// let matricula = prompt ('Digite seu ID:');
-// document.getElementById('id').value = matricula;
+    const botaRealizar = document.querySelector('.botao__realizar');
+    const dadosAnalista = document.querySelector('nav');
 
-// let filial = prompt ('Digite sua unidade:');
-// document.getElementById('unidade').value = filial;
+    let analista = prompt ('Digite seu nome:');
+    document.getElementById('nome').value = analista;
 
-let data = new Date();
+    let matricula = prompt ('Digite seu ID:');
+    document.getElementById('id').value = matricula;
 
-let dia = data.getDate();
-dia = dia <10? "0" + dia : dia;
+    let filial = prompt ('Digite sua unidade:');
+    document.getElementById('unidade').value = filial;
 
-let mes =data.getMonth();
-mes = mes++ <10? "0" + mes : mes++;
+    let data = new Date();
+    let dia = data.getDate();
+    dia = dia <10? "0" + dia : dia;
 
-let ano = data.getFullYear();
+    let mes =data.getMonth();
+    mes = mes++ <10? "0" + mes : mes++;
 
-let dataRealizacao = dia + '/' + mes + '/' + ano;
-document.getElementById('data').value = dataRealizacao;
+    let ano = data.getFullYear();
+
+    let dataRealizacao = dia + '/' + mes + '/' + ano;
+    document.getElementById('data').value = dataRealizacao;
+
+    dadosAnalista.classList.remove('dados__analista');
+    dadosAnalista.classList.add('mostrar__nav');
+    botaRealizar.classList.add('ocultar__botao');
+    
+}
 
 let totalCelulas = document.getElementById('calcular');
-
-/*function zerar() {
-    let total = document.getElementById('total');
-    total.innerHTML = "";
-}*/
 
 function somar() {
     let cel1 = Number(document.getElementById('cel_1').value);

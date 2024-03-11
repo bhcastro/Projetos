@@ -10,6 +10,18 @@
     padding: 2px;
     cursor: pointer;
 }
+
+.div__botao{
+    text-align: center;
+    margin-top: 30px;
+}
+.ocultar__botao{
+    display: none;
+}
+
+.botao__realizar{
+    width: 150px;
+}
 .botoes:hover {
     background-color: var(--caixas-preenchimento);
 
