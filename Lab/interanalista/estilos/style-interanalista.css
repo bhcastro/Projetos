@@ -7,12 +7,13 @@
 @import url("media_query.css");
 @import url("nav.css");
 @import url("questoes.css");
-@import url("rodape.css");
+@import url("footer.css");
 
 * {
     margin: 0;
     padding: 0;
     font-family: var(--fonte-texto);
+    box-sizing: border-box;
 }
 
 :root {
@@ -28,7 +29,7 @@
 }
 
 .formulario{
-    width: 100%;
+
     margin: auto;
 }
 
@@ -36,53 +37,51 @@ input, select {
     font-size: 0.8em;
     width: 200px;
     height: 18px;
+    padding: 2px;
     text-align: center;
-    box-shadow: 5px 5px 10px var(--sombra-caixas);
-    border-radius: 7px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
 }
-input:focus {
-    background-color: var(--caixas-preenchimento)
-}
+
 textarea {
     font-size: 0.8em;
-    margin: 1% 0% 0% 2%;
-    border-radius: 5px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px var(--cor01) solid;
     text-align: justify;
     box-shadow: 5px 5px 10px var(--sombra-caixas);
-    
+    outline: none;
+    resize: none;
+    text-align: justify;
+    padding-left: 10px;
+    padding-top: 5px;
 }
-textarea:focus {
-    background-color: var(--caixas-preenchimento)
-}
-
 
 /*BODY*/
+
 .corpo {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
     background-color: #11be7967;
     margin: auto;
 }
 /*MAIN*/
 main {
-    box-sizing: border-box;
-    font-weight: normal;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
-    margin: 0% auto 5% auto;
+    margin: 0 auto;
     background-color: var(--cor-main);
     box-shadow: 5px 5px 10px var(--sombra-caixas);
-    border: 1px solid var(--cor-bordas);
     border-radius: 0px 0px 20px 20px;
 }
 main div {
-    font-size: 120%;
+    font-size: 1.3rem;
     text-align: center;
     background-color: var(--cor-fundo-questoes);
-    width: 100%;
-    padding: 20px 20px;
-    margin: 2% auto;
+    padding: 20px;
+    margin: 30px auto;
     border-radius: 30px 30px;
     box-shadow: 5px 5px 10px var(--sombra-caixas);
     border: 0.5px solid var(--cor-bordas);
