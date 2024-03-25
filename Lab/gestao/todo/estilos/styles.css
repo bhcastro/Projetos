@@ -27,7 +27,7 @@
     text-align: center;
     width: 700px;
     font-size: 2rem;
-    color: black;
+    color: #00f936;
 }
 
 .titulo{
@@ -62,9 +62,10 @@
     list-style: none;
 }
 
-.tarefas{
+.tarefa_inicial{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin: 15px;
     padding: 20px 30px;
     border-radius: 30px;
@@ -72,6 +73,20 @@
     background-color: var(--transparencia-80);
     font-weight: bold;
     cursor: pointer;
+}
+
+.tarefas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #00000073;
+    background-color: var(--transparencia-80);
+    font-weight: bold;
+    cursor: pointer;
+    overflow: scroll;
 }
 .tarefas:hover .imagens{
     opacity: 1;
@@ -88,4 +103,58 @@ text-decoration: line-through;
     height: 25px;
     cursor: pointer;
     opacity: 0;
+}
+
+@media (max-width: 500px){
+    .corpo{
+        background-image: url('/Lab/gestao/todo/img/background_pequeno.jpg');
+        text-align: center;
+    }
+    .cabecalho{
+        text-align: center;
+        width: 100vw;
+    }
+    #linha{
+        text-align: center;
+        width: 100vw;
+        margin: auto;   
+    }
+
+    .tarefas{
+        width: 100vw;
+    }
+    .botoes{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .inputs{
+        width: 90%;
+        padding: 10px;
+        height: 2.5rem;
+    }
+    .nova__tarefa{
+        display: flex;
+        justify-content: baseline;   
+        height: 3.5rem;
+    }
+    .container{
+        margin: auto;
+        text-align: center;
+        width: 100vw;
+        padding: 15px 1px;
+        margin: 15px auto;
+    }
+    .lista__tarefas{
+        width: 100%;
+        margin: auto;
+    }
+    .tarefas{
+        width: 90%;
+
+    }
+    .tarefas .imagens{
+        opacity: 1;
+    }
 }

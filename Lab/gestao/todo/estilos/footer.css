@@ -7,6 +7,9 @@
     align-items: center;
     font-weight: 500;
     font-size: 1.1em;
+    background-color: var(--transparencia-80);
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #00000073;
 }
 .rodape:hover{
     cursor: default;
