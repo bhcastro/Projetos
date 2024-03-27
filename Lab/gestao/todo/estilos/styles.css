@@ -86,7 +86,7 @@
     background-color: var(--transparencia-80);
     font-weight: bold;
     cursor: pointer;
-    overflow: auto;
+    overflow: hide;
 }
 .tarefas:hover .imagens{
     opacity: 1;
@@ -152,7 +152,7 @@ text-decoration: line-through;
     }
     .tarefas{
         width: 90%;
-
+        overflow: scroll;
     }
     .tarefas .imagens{
         opacity: 1;
