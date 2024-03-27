@@ -86,7 +86,7 @@
     background-color: var(--transparencia-80);
     font-weight: bold;
     cursor: pointer;
-    overflow: scroll;
+    overflow: auto;
 }
 .tarefas:hover .imagens{
     opacity: 1;
