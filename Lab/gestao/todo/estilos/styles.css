@@ -107,7 +107,7 @@ text-decoration: line-through;
 
 @media (max-width: 500px){
     .corpo{
-        background-image: url('/Lab/gestao/todo/img/background_pequeno.jpg');
+        background-image: url(../img/background_pequeno.jpg);
         text-align: center;
     }
     .cabecalho{
