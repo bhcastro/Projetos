@@ -14,28 +14,21 @@
             <h1>Avaliação de Conhecimentos</h1>
             <h2>Hematologia e Microscopia</h2>
             <div class="div__botao">
-                <!--INICIAR A PROVA-->
                 <input class="botoes botao__realizar" type="button" value="Realizar Prova" onclick="iniciar()">
             </div>
         </header>
         <form class="formulario" autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
             <nav class="dados__analista">
 
-                <!--Unidade-->
                 <input readonly placeholder="Unidade" class="seletores seletor__unidade" id="unidade" name="Unidade">
 
-                <!--ID-->
                 <input readonly placeholder="ID" class="seletores seletor__id" id="id" name="Matricula">
 
-                <!--NOME-->
                 <input readonly placeholder="Nome" class="seletores seletor__nome" id="nome" name="Nome">
 
-                <!--DATA DE REALIZAÇÃO-->
                 <input readonly placeholder="Data" class="seletores seletor__data" id="data" name="Data">
             </nav>
-            <!-- Início da prova-->
             <main>       
-                <!--QUESTÃO 01-->
                 <div id="questao1">
                     <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
 
@@ -49,8 +42,6 @@
                             <li><input class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens" src="../imagens/oxalato.jpg" alt="imagem"><br></li>
                         </ul>
                     </div>
-                    
-                <!--QUESTÃO 02-->
                 <div id="questao2">
                     <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
                     <ul class="lista__q2">
@@ -65,8 +56,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <!--QUESTÃO 03-->
                 <div id="questao03">
                     <h3>3 - Leitura da lâmina:</h3>
                     <table>
