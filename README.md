@@ -9,3 +9,5 @@ Clique <a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/index/calcu
 Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/qualidade_continua/nao-conformidade/index/nao_conformidade.html" target="_blank">aqui</a> para acessar a abertura de não conformidade!
 
 Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/todo/index/index.html">aqui</a> para acessar a To-Do list!
+
+Clique <a href="https://bhcastro.github.io/Projetos/Lab/gestao/qualidade_continua/reprodutibilidade/repro.html">aqui</a> para acessar tabela de reprodutibilidade!
