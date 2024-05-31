@@ -17,7 +17,7 @@
         <h2>Equipamento 1</h2>
         <div class="conteiner amostra_normal">
             <table class="resultados resultado_1">
-                <th colspan="5">
+                <th colspan="4">
                     <h3>
                         Amostra Normal: <input class="amostra" >
                     </h3>
@@ -25,55 +25,54 @@
                 <tr>
                     <td></td>
                     <td class="periodo">Manhã</td>
-                    <td class="periodo">Tarde</td>
-                    <td class="periodo">Noite</td>
-                    <td class="periodo">Situação</td>
+                    <td class="periodo">Tarde (%)</td>
+                    <td class="periodo">Noite (%)</td>
                 </tr>
                 <tr>
                     <td class="parametros">RBC</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao">APROVADO</td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_manha"></td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_tarde"><span class="span_tarde"></span></td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_noite"><span class="span_noite"></span></td>
                 </tr>
                 <tr>
                     <td class="parametros">HB</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao"></td>
+                    <td class="linha_dados hb_manha"><input class="dados_brutos"></td>
+                    <td class="linha_dados hb_tarde"><input class="dados_brutos"></td>
+                    <td class="linha_dados hb_noite"><input class="dados_brutos"></td>
+                    <td class="situacao situaca_hb"></td>
                 </tr>
                 <tr>
                     <td class="parametros">HT</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao"></td>
+                    <td class="linha_dados ht_manha"><input class="dados_brutos"></td>
+                    <td class="linha_dados ht_tarde"><input class="dados_brutos"></td>
+                    <td class="linha_dados ht_noite"><input class="dados_brutos"></td>
+                    <td class="situacao situacao_ht"></td>
                 </tr>
                 <tr>
                     <td class="parametros">WBC</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao"></td>
+                    <td class="linha_dados wbc_manha"><input class="dados_brutos"></td>
+                    <td class="linha_dados wbc_tarde"><input class="dados_brutos"></td>
+                    <td class="linha_dados wbc_noite"><input class="dados_brutos"></td>
+                    <td class="situacao wbc_situacao"></td>
                 </tr>
                 <tr>
                     <td class="parametros">PLAQUETAS</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao"></td>
+                    <td class="linha_dados plaq_manha"><input class="dados_brutos"></td>
+                    <td class="linha_dados plaq_tarde"><input class="dados_brutos"></td>
+                    <td class="linha_dados plaq_noite"><input class="dados_brutos"></td>
+                    <td class="situacao plaq_situacao"></td>
                 </tr>
                 <tfoot>
                     <tr>
-                        <td colspan="5"><button class="verificar">Verificar</button></td>
+                        <td colspan="2"><button class="verificar" onclick="calcularTarde()">Verificar Tarde</button></td>
+                        <td colspan="2"><button class="verificar" onclick="calcularNoite()">Verificar Noite</button></td>
                     </tr>
                 </tfoot>
             </table>
         </div>
-        <div class="conteiner amostra_patologica">
+        <!-- <div class="conteiner amostra_patologica">
             <table class="resultados resultado_2">
-                <th colspan="5">
+                <th colspan="4">
                     <h3>
                         Amostra Patológica: <input class="amostra">
                 </th>
@@ -86,10 +85,9 @@
                 </tr>
                 <tr>
                     <td class="parametros">RBC</td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="linha_dados"><input class="dados_brutos"></td>
-                    <td class="situacao"></td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_manha2"></td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_tarde2"><span class="span2"></span></td>
+                    <td class="linha_dados"><input class="dados_brutos rbc_noite2"></td>
                 </tr>
                 <tr>
                     <td class="parametros">HB</td>
@@ -121,7 +119,7 @@
                 </tr>
                 <tfoot>
                     <tr>
-                        <td colspan="5"><button  class="verificar">Verificar</button></td>
+                        <td colspan="4"><button class="verificar" onclick="calcular2()">Verificar</button></td>
                     </tr>
                 </tfoot>
             </table>
@@ -246,6 +244,6 @@
     
     <span>
         <button class="gerar_pdf" onclick="print()">Gerar PDF</button>
-    </span>
+    </span> -->
 </body>
 </html>
