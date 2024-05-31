@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte);
+}
+
+:root{
+    --fonte-padrao: "Lato", sans-serif;
+    --amarelo-transparente: rgba(239, 255, 11, 0.6);
+    --amarelo-botao: rgba(237, 252, 32, 0.301);
+    --cor-fonte: #000000;
+    --preto-botao: rgba(0, 0, 0, 0.301);
+}
+
+body{
+    text-align: center;
+    background-image: url('background.jfif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h1{
+    margin: 0.7em auto;
+    text-align: center;
+    background-color: var(--amarelo-transparente);
+    padding: 0.4em;
+    width: fit-content;
+    border-radius: 20px;
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+    padding: 0.9em 0;
+    margin: 1em;
+}
+h3{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.periodo{
+    margin: 1em;
+}
+.verificar{
+    margin: 2em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid var(--cor-fonte);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--amarelo-botao)
+}
+.verificar:hover{
+    background-color: var(--preto-botao);
+    color: rgb(253, 248, 248);
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    width: 6.5em;
+    margin: 0.5em 1.5em;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+}
+textarea{
+    margin-bottom: 4em;
+    padding: 1em;
+    text-align: justify;
+    border: 1px solid black;
+    width: 30em;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+.passagem{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--amarelo-transparente);
+    border-radius: 20px;
+}
+
+.conteiner{
+    text-align: center;
+    margin: 0em 5em;
+}
+
+.resultados{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 1.5em;
+}
+
+.gerar_pdf{
+    margin: 2em 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid var(--cor-fonte);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.aprovado{
+    padding: 0.5em;
+    color: green;
+}
+.reprovado{
+    padding: 0.5em;
+    color: red;
+}
