@@ -6,11 +6,11 @@ function calcularTarde() {
     if(situacao > 15){
         const situacaoTarde = document.querySelector('.span_tarde');
         situacaoTarde.innerHTML = (`(${situacao} %)`);
-        situacaoTarde.classList.add('.aprovado');
+        situacaoTarde.classList.add('aprovado');
     }else{
         const situacaoTarde = document.querySelector('.span_tarde');
         situacaoTarde.innerHTML = (`(${situacao} %)`);
-        situacaoTarde.classList.add('.reprovado');
+        situacaoTarde.classList.add('reprovado');
     }
 }
 
@@ -22,10 +22,10 @@ function calcularNoite() {
     if(situacao > 15){
         const situacaoNoite = document.querySelector('.span_tarde');
         situacaoNoite.innerHTML = (`(${situacao} %)`);
-        situacaoNoite.classList.add('.aprovado');
+        situacaoNoite.classList.add('aprovado');
     }else{
         const situacaoNoite = document.querySelector('.span_tarde');
         situacaoNoite.innerHTML = (`(${situacao} %)`);
-        situacaoNoite.classList.add('.reprovado');
+        situacaoNoite.classList.add('reprovado');
     }
 }
