@@ -1,13 +1,16 @@
-let rbcTarde = document.querySelector('.rbc_tarde').value;
 function calcularTarde() {
     let valorManha = document.querySelector('.rbc_manha').value;
     let valorTarde = document.querySelector('.rbc_tarde').value;
     let desvio = ((valorTarde - valorManha) / valorManha) * 100 ;
     let situacao = desvio.toFixed(2);
     if(situacao > 15){
-    document.querySelector('.span_tarde').innerHTML = (`(${situacao} %)`);
+        const situacaoTarde = document.querySelector('.span_tarde');
+        situacaoTarde.innerHTML = (`(${situacao} %)`);
+        situacaoTarde.classList.add('.aprovado');
     }else{
-        document.querySelector('.span_tarde').innerHTML = (`(${situacao} %)`);
+        const situacaoTarde = document.querySelector('.span_tarde');
+        situacaoTarde.innerHTML = (`(${situacao} %)`);
+        situacaoTarde.classList.add('.reprovado');
     }
 }
 
@@ -17,8 +20,12 @@ function calcularNoite() {
     let desvio = ((valorNoite - valorManha) / valorManha) * 100 ;
     let situacao = desvio.toFixed(2);
     if(situacao > 15){
-        document.querySelector('.span_noite').innerHTML = (`(${situacao} %)`);
-        }else{
-            document.querySelector('.span_noite').innerHTML = (`(${situacao} %)`);
-        }
+        const situacaoNoite = document.querySelector('.span_tarde');
+        situacaoNoite.innerHTML = (`(${situacao} %)`);
+        situacaoNoite.classList.add('.aprovado');
+    }else{
+        const situacaoNoite = document.querySelector('.span_tarde');
+        situacaoNoite.innerHTML = (`(${situacao} %)`);
+        situacaoNoite.classList.add('.reprovado');
+    }
 }
