@@ -3,12 +3,11 @@ function calcularTarde() {
     let valorTarde = document.querySelector('.rbc_tarde').value;
     let desvio = ((valorTarde - valorManha) / valorManha) * 100 ;
     let situacao = desvio.toFixed(2);
-    if(situacao > 15){
-        const situacaoTarde = document.querySelector('.span_tarde');
+    const situacaoTarde = document.querySelector('.span_tarde');
+    if(situacao < 1.5){
         situacaoTarde.innerHTML = (`(${situacao} %)`);
-        situacaoTarde.classList.add('aprovado');
+  situacaoTarde.classList.add('aprovado');
     }else{
-        const situacaoTarde = document.querySelector('.span_tarde');
         situacaoTarde.innerHTML = (`(${situacao} %)`);
         situacaoTarde.classList.add('reprovado');
     }
@@ -19,12 +18,12 @@ function calcularNoite() {
     let valorNoite = document.querySelector('.rbc_noite').value;
     let desvio = ((valorNoite - valorManha) / valorManha) * 100 ;
     let situacao = desvio.toFixed(2);
-    if(situacao > 15){
-        const situacaoNoite = document.querySelector('.span_tarde');
+    const situacaoNoite = document.querySelector('.span_noite');
+    if(situacao < 1.5){ 
         situacaoNoite.innerHTML = (`(${situacao} %)`);
         situacaoNoite.classList.add('aprovado');
     }else{
-        const situacaoNoite = document.querySelector('.span_tarde');
+        const situacaoNoite = document.querySelector('.span_noite');
         situacaoNoite.innerHTML = (`(${situacao} %)`);
         situacaoNoite.classList.add('reprovado');
     }
