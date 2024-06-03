@@ -1,23 +1,35 @@
 /*BOTÕES*/
-#enviar, #limpar {
-    font-size: 0.9em;
+.botoes {
+    font-size: 1.1rem;
     font-family: var(--fonte-header);
+    font-weight: bold;
     border: 2px solid var(--cor01);
     width: 100px;
-    height: 30px;
-    margin: 2%;
+    height: auto;
     border-radius: 20px;
+    padding: 2px;
+    cursor: pointer;
 }
 
-.botao_tabela {
-    font-size: 0.9em;
-    font-family: var(--fonte-header);
-    border: 2px solid var(--cor01);
-    width: 100px;
-    height: 30px;
-    margin: 2%;
-    border-radius: 20px;
+.div__botao{
+    text-align: center;
+    margin-top: 30px;
 }
-.botao_tabela:hover {
+.ocultar__botao{
+    display: none;
+}
+
+.botao__realizar{
+    width: 150px;
+}
+.botoes:hover {
     background-color: var(--caixas-preenchimento);
+
+}
+
+.div__botoes{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
 }

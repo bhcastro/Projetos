@@ -1,15 +1,8 @@
 .cabecalho{
-    width: 100%;
-    font-size: 1.5em;
     font-family: var(--fonte-header);
+    font-size: 1.5em;
     text-align: center;
     background: linear-gradient(to top, var(--cor01), transparent);
-    padding-bottom: 25px;
+    padding: 25px 0px;
     text-shadow: 5px 5px 10px #0000004d;
-}
-
-#titulo{
-    width: fit-content;
-    padding: 10px 0px;
-    margin: auto;
 }

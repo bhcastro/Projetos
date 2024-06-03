@@ -57,9 +57,7 @@ function calcularNoite() {
             botaoNoite.classList.add('ocultar');
         }
     }
-
 }
-
 function imprimir(){
     const gerarPdf = document.querySelector('.gerar_pdf');
     gerarPdf.classList.add('ocultar');
