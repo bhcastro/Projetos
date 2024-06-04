@@ -25,8 +25,9 @@
                 <div class="questao__03">
                     <h3>3 - Contagem diferencial:</h3>
                     <section class="seletor">
-                        <select name="seletor__celula" class="seletor__celula">
-                            <option selected disabled class="seletor__celula-opcao">Selecione a célula</option>
+                        <input type="text" class="celula" placeholder="Digite a célula:">
+                        <!-- <select name="seletor__celula" class="seletor__celula">
+                            <option selected disabled class="celula">Selecione a célula</option>
                             <option class="celula">Blasto</option>
                             <option class="celula">Promielócito</option>
                             <option class="celula">Mielócito</option>
@@ -38,8 +39,9 @@
                             <option class="celula">Monócito</option>
                             <option class="celula">Eosinófilo</option>
                             <option class="celula">Basófilo</option>
-                        </select>
-                        <input type="button" class="botoes botao__remover" value="+">
+                            <option class="celula">Outras células</option>
+                        </select> -->
+                        <input type="button" onclick="adicionarCelula()" class="botoes botao__adicionar" value="+">
                     </section>
                     <section class="contador__celulas">
                         <ul class="lista__celulas">
