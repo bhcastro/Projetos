@@ -26,29 +26,16 @@
                     <h3>3 - Contagem diferencial:</h3>
                     <section class="seletor">
                         <input type="text" class="celula" placeholder="Digite a célula:">
-                        <!-- <select name="seletor__celula" class="seletor__celula">
-                            <option selected disabled class="celula">Selecione a célula</option>
-                            <option class="celula">Blasto</option>
-                            <option class="celula">Promielócito</option>
-                            <option class="celula">Mielócito</option>
-                            <option class="celula">Metamielócito</option>
-                            <option class="celula">Bastão</option>
-                            <option class="celula">Segmentado</option>
-                            <option class="celula">Linfócito Atípico</option>
-                            <option class="celula">Linfócito</option>
-                            <option class="celula">Monócito</option>
-                            <option class="celula">Eosinófilo</option>
-                            <option class="celula">Basófilo</option>
-                            <option class="celula">Outras células</option>
-                        </select> -->
+                        <input type="text" class="celula valor__celulas" placeholder="Digite a quantidade:">
                         <input type="button" onclick="adicionarCelula()" class="botoes botao__adicionar" value="+">
                     </section>
                     <section class="contador__celulas">
                         <ul class="lista__celulas">
                             <li class="diferencial">
-                                Adicione uma célula. <input class="quantidade__celula" type="number"> <input type="button" class="botoes botao__remover" value="-">
+                                Adicione uma célula.
                             </li>
                         </ul>
+                        <p class="total ocultar__total">Total: <span class="total__celulas"></span></p>
                     </section>
                 </div>
             </main>

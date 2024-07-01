@@ -42,3 +42,11 @@
     border: 2px solid black;
     margin: 10px;
 }
+
+.ocultar__total{
+    display: none;
+}
+
+.mostrar__total{
+    display: block;
+}
