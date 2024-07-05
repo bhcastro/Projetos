@@ -50,3 +50,7 @@
 .mostrar__total{
     display: block;
 }
+
+.disable{
+    display: none;
+}
