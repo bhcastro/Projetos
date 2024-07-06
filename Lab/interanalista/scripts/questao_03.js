@@ -1,14 +1,32 @@
 const botaoAdicionarCelula = document.querySelector('.botao__adicionar');
 const botaoRemoverCelula = document.querySelector('.botao__remover');
-const inputCelula = document.querySelector('.celula');
-const inputValor = document.querySelector('.valor__celulas');
 const celulas = document.querySelector('.lista__celulas');
-const valorTotalCelulas = document.querySelector('.total');
 const listaDeCelulas = [];
 const contagemGlobal = [];
+
+const valorSuperior = 'Valor de células atingido.';
+const nomeCelula = 'Não é possível inserir células sem nome!';
+const valorCelula = 'Não é possível inserir células sem valor!';
+
+let valorTotalCelulas = document.querySelector('.total');
+let inputCelula = document.querySelector('.celula');
+let inputValor = document.querySelector('.valor__celulas');
+
 inputCelula.focus();
 
 function adicionarCelula(){
+    let campoCelula = inputCelula.value.trim();
+    let campoValor = parseInt(inputValor.value);
+    if (campoCelula === '') {
+        alert(nomeCelula);
+        inputCelula.focus();
+        return;
+    }
+    if (isNaN(campoValor)) {
+        alert(valorCelula);
+        inputValor.focus();
+        return;
+    }
     listaDeCelulas.push(inputCelula.value);
     contagemGlobal.push(parseInt(inputValor.value));
     somarCelulas();
@@ -23,8 +41,6 @@ function removerCelula(celula){
         contagemGlobal.splice(celula, 1);
         mostrarCelulas();
         somarCelulas();
-    }else{
-        mostrarCelulas();
     }
     if(listaDeCelulas.length === 0){
         location.reload();
@@ -46,13 +62,13 @@ function somarCelulas(){
     total += celula;
     if (total > 100) {
         botaoAdicionarCelula.classList.add('disable');
-        valorTotalCelulas.textContent = `Total: ${total}`;
-        valorTotalCelulas.classList.add('mostrar__total');
-    }else{
+        valorTotalCelulas.classList.add('valor__errado');
+        alert(valorSuperior);
+    } else {
+        valorTotalCelulas.classList.remove('valor__errado')
         botaoAdicionarCelula.classList.remove('disable');
-        valorTotalCelulas.textContent = `Total: ${total}`;
-        valorTotalCelulas.classList.add('mostrar__total');
-        console.log(total);
-        }
+    }
+    valorTotalCelulas.textContent = `Total: ${total}`;
+    valorTotalCelulas.classList.add('mostrar__total');
     }
 }

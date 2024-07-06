@@ -16,7 +16,6 @@
     border: 1px solid black;
     font-weight: bold;
 }
-
 .botoes{
     margin: 10px;
     width: 60px;
@@ -45,6 +44,10 @@
 
 .ocultar__total{
     display: none;
+}
+
+.valor__errado{
+    color: red;
 }
 
 .mostrar__total{
