@@ -3,29 +3,23 @@
 .questao__03{
     text-align: center;
     gap: 5px;
+    width: 85%;
 }
 
-.seletor__celula{
-    font-family: var(--fonte-texto);
-    width: fit-content;
-    height: fit-content;
+.celula{
+    margin: 15px;
+    font-size: 1.2rem;
+    width: 200px;
+    height: 18px;
+    padding: 0.2rem;;
     text-align: center;
-    padding: 5px;
-    margin: 20px;
-    background-color: var(--cor-fundo-questoes);
-    border: 1px solid black;
-    font-weight: bold;
+    border: 1px var(--cor01) solid;
+    outline: none;
+    border-radius: 10px;
 }
-.botoes{
-    margin: 10px;
-    width: 60px;
-    height: 30px;
-    border: 2px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bolder;
-}
-.botoes:hover, .seletor__celula:hover{
+
+
+.botoes:hover{
     background-color: var(--cor02);
 }
 .botoes:active{
@@ -48,6 +42,9 @@
 
 .valor__errado{
     color: red;
+}
+.valor__certo{
+    color: green;
 }
 
 .mostrar__total{

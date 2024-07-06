@@ -1,0 +1,95 @@
+.inputs{
+    width: 195px;
+    border: 1px var(--cor01) solid;
+    padding: 0.1rem;
+    margin: 15px auto;
+}
+
+/*QUESTÃO 01*/
+#questao1 {
+    width: 85%;
+}
+.lista__q1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+}
+
+.imagens {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    border: 1px var(--cor01) solid;
+}
+
+
+/*QUESTÃO 02*/
+#questao2 {
+    width: 85%;
+}
+
+.lista__q2{
+    text-align: left;
+    list-style-position: inside;
+    list-style: none;
+    padding: 15px;
+}
+
+.radio {
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    margin: 5px;
+}
+
+/*QUESTÃO 03*/
+#questao03 {
+    width: 85%;
+}
+
+.lista__q3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+}
+
+/*QUESTÃO 03 - TABELA*/
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 30px auto;
+    background-color: white;
+}
+tbody {
+    background-color: white;
+}
+
+thead, tfoot {
+    background-color: var(--cor02);
+}
+tbody > tr:nth-child(even){
+    background-color: #94f8d067;
+}
+
+th, td {
+    border: 1.5px solid black;
+    padding: 15px;
+}
+.A1 {
+    text-align: justify;
+    width: 300px;
+}
+.B1 {
+    width: 100px;
+}
+.B1 input{
+    width: 45%;
+    text-align: center;
+    background-color: transparent;
+}
+

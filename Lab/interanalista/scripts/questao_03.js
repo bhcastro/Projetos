@@ -4,7 +4,8 @@ const celulas = document.querySelector('.lista__celulas');
 const listaDeCelulas = [];
 const contagemGlobal = [];
 
-const valorSuperior = 'Valor de células atingido.';
+const valorCerto = 'Valor de células atingido.';
+const valorSuperior = 'Valor de células ultrapassado, reveja sua contagem!'
 const nomeCelula = 'Não é possível inserir células sem nome!';
 const valorCelula = 'Não é possível inserir células sem valor!';
 
@@ -43,7 +44,8 @@ function removerCelula(celula){
         somarCelulas();
     }
     if(listaDeCelulas.length === 0){
-        location.reload();
+        celulas.innerHTML = '';
+        valorTotalCelulas.textContent = '';
     }
 }
 
@@ -60,14 +62,21 @@ function somarCelulas(){
     let total = 0;
     for (let celula of contagemGlobal) {
     total += celula;
-    if (total > 100) {
+    if (total == 100){
+        botaoAdicionarCelula.classList.add('disable');
+        valorTotalCelulas.classList.add('valor__certo');
+        valorTotalCelulas.classList.remove('valor__errado');
+        alert(valorCerto);
+    }else if (total > 100) {
         botaoAdicionarCelula.classList.add('disable');
         valorTotalCelulas.classList.add('valor__errado');
+        valorTotalCelulas.classList.remove('valor__certo');
         alert(valorSuperior);
     } else {
-        valorTotalCelulas.classList.remove('valor__errado')
+        valorTotalCelulas.classList.remove('valor__errado');
+        valorTotalCelulas.classList.remove('valor__certo');
         botaoAdicionarCelula.classList.remove('disable');
-    }
+    }    
     valorTotalCelulas.textContent = `Total: ${total}`;
     valorTotalCelulas.classList.add('mostrar__total');
     }

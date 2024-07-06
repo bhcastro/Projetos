@@ -2,10 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sogdian&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
+@import url("botoes.css");
 @import url("cabecalho.css");
-@import url("nav.css");
+@import url("dados__analista.css");
 @import url("footer.css");
+@import url("nav.css");
 @import url("questao_03.css");
+@import url("questoes.css");
+
 
 * {
     margin: 0;

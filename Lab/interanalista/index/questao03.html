@@ -13,49 +13,15 @@
         <header class="cabecalho hemato">
             <h1>Avaliação de Conhecimentos</h1>
             <h2>Hematologia e Microscopia</h2>
-            <div class="div__botao">
-                <input class="botoes botao__realizar" type="button" value="Realizar Prova" onclick="iniciar()">
-            </div>
         </header>
         <form class="formulario" autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
             <nav class="dados__analista">
-
                 <input readonly placeholder="Unidade" class="seletores seletor__unidade" id="unidade" name="Unidade">
-
                 <input readonly placeholder="ID" class="seletores seletor__id" id="id" name="Matricula">
-
                 <input readonly placeholder="Nome" class="seletores seletor__nome" id="nome" name="Nome">
-
                 <input readonly placeholder="Data" class="seletores seletor__data" id="data" name="Data">
             </nav>
-            <main>       
-                <div id="questao1">
-                    <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
-
-                        <ul class="lista__q1">
-                            <li><input class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens" src="../imagens/basofilo.jpg" alt="imagem"></li>
-                        
-                            <li><input class="inputs" type="text" name="Imagem B" placeholder="Digite"><br><img class="imagens" src="../imagens/linfo.jpg" alt="imagem"></li>
-                        
-                            <li><input class="inputs" type="text" name="Imagem C" placeholder="Digite"><br><img class="imagens" src="../imagens/neutro.jpg" alt="imagem"></li>
-
-                            <li><input class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens" src="../imagens/oxalato.jpg" alt="imagem"><br></li>
-                        </ul>
-                    </div>
-                <div id="questao2">
-                    <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
-                    <ul class="lista__q2">
-                        <li>
-                            Qual valor observado?
-                            <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos" placeholder="Ex.: 1.23" step="0.1">
-                        </li>
-                        <li>
-                            Este valor está dentro da referência?
-                            <input name="Valor dentro da referência?" class="radio" value="Sim" type="radio">Sim
-                            <input name="Valor dentro da referência?" class="radio" value="Não" type="radio">Não
-                        </li>
-                    </ul>
-                </div>
+            <main>
                 <div class="questao__03">
                     <h3>3 - Contagem diferencial:</h3>
                     <section class="seletor">
@@ -77,7 +43,6 @@
         <footer class="rodape">
             Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../imagens/github.png" alt="GitHub" class="github"></a>
         </footer>
-        <script src="../scripts/iniciar_prova.js"></script>
         <script src="../scripts/questao_03.js"></script>
     </body>
 </html>
