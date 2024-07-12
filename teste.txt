@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média dos Períodos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .period {
+            margin-bottom: 20px;
+        }
+        .period h2 {
+            margin-bottom: 10px;
+        }
+        .period input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .calculate-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .calculate-button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Média dos Períodos</h1>
+        
+        <div class="period" id="morning">
+            <h2>Manhã</h2>
+            <input type="number" id="morning1" placeholder="Valor 1">
+            <input type="number" id="morning2" placeholder="Valor 2">
+            <input type="number" id="morning3" placeholder="Valor 3">
+            <input type="number" id="morning4" placeholder="Valor 4">
+            <input type="number" id="morning5" placeholder="Valor 5">
+        </div>
+        
+        <div class="period" id="afternoon">
+            <h2>Tarde</h2>
+            <input type="number" id="afternoon1" placeholder="Valor 1">
+            <input type="number" id="afternoon2" placeholder="Valor 2">
+            <input type="number" id="afternoon3" placeholder="Valor 3">
+            <input type="number" id="afternoon4" placeholder="Valor 4">
+            <input type="number" id="afternoon5" placeholder="Valor 5">
+        </div>
+        
+        <div class="period" id="evening">
+            <h2>Noite</h2>
+            <input type="number" id="evening1" placeholder="Valor 1">
+            <input type="number" id="evening2" placeholder="Valor 2">
+            <input type="number" id="evening3" placeholder="Valor 3">
+            <input type="number" id="evening4" placeholder="Valor 4">
+            <input type="number" id="evening5" placeholder="Valor 5">
+        </div>
+        
+        <button class="calculate-button" onclick="calculateAverage()">Calcular Média</button>
+        
+        <div class="result" id="result">
+            <!-- O resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script>
+        function calculateAverage() {
+            const morningValues = [
+                parseFloat(document.getElementById('morning1').value) || 0,
+                parseFloat(document.getElementById('morning2').value) || 0,
+                parseFloat(document.getElementById('morning3').value) || 0,
+                parseFloat(document.getElementById('morning4').value) || 0,
+                parseFloat(document.getElementById('morning5').value) || 0
+            ];
+            const afternoonValues = [
+                parseFloat(document.getElementById('afternoon1').value) || 0,
+                parseFloat(document.getElementById('afternoon2').value) || 0,
+                parseFloat(document.getElementById('afternoon3').value) || 0,
+                parseFloat(document.getElementById('afternoon4').value) || 0,
+                parseFloat(document.getElementById('afternoon5').value) || 0
+            ];
+            const eveningValues = [
+                parseFloat(document.getElementById('evening1').value) || 0,
+                parseFloat(document.getElementById('evening2').value) || 0,
+                parseFloat(document.getElementById('evening3').value) || 0,
+                parseFloat(document.getElementById('evening4').value) || 0,
+                parseFloat(document.getElementById('evening5').value) || 0
+            ];
+            
+            const averages = morningValues.map((value, index) => {
+                return (value + afternoonValues[index] + eveningValues[index]) / 3;
+            });
+
+            document.getElementById('result').innerHTML = `
+                <strong>Média dos Valores por Posição:</strong><br>
+                Valor 1: ${averages[0].toFixed(2)}<br>
+                Valor 2: ${averages[1].toFixed(2)}<br>
+                Valor 3: ${averages[2].toFixed(2)}<br>
+                Valor 4: ${averages[3].toFixed(2)}<br>
+                Valor 5: ${averages[4].toFixed(2)}
+            `;
+        }
+    </script>
+</body>
+</html>
