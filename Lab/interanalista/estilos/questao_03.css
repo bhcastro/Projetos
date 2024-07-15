@@ -1,9 +1,18 @@
 @charset "UTF-8";
 
 .questao__03{
+    display: auto;
     text-align: center;
     gap: 5px;
     width: 85%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--cor-fundo-questoes);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px var(--sombra-caixas);
+    border: 0.5px solid var(--cor-bordas);
 }
 
 .celula{

@@ -13,8 +13,6 @@ let valorTotalCelulas = document.querySelector('.total');
 let inputCelula = document.querySelector('.celula');
 let inputValor = document.querySelector('.valor__celulas');
 
-inputCelula.focus();
-
 function adicionarCelula(){
     let campoCelula = inputCelula.value.trim();
     let campoValor = parseInt(inputValor.value);
