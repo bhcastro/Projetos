@@ -1,10 +1,10 @@
 const botaoAdicionarCelula = document.querySelector('.botao__adicionar');
 const botaoRemoverCelula = document.querySelector('.botao__remover');
 const celulas = document.querySelector('.lista__celulas');
+const botaoImprimir = document.querySelector('.botao__imprimir');
 const listaDeCelulas = [];
 const contagemGlobal = [];
 
-const valorCerto = 'Valor de células atingido.';
 const valorSuperior = 'Valor de células ultrapassado, reveja sua contagem!'
 const nomeCelula = 'Não é possível inserir células sem nome!';
 const valorCelula = 'Não é possível inserir células sem valor!';
@@ -35,7 +35,7 @@ function adicionarCelula(){
 
 function removerCelula(celula){
     let excluirCelula = confirm(`Deseja mesmo remover: ${listaDeCelulas[celula]}?`);
-    if(excluirCelula == true){
+    if(excluirCelula === true){
         listaDeCelulas.splice(celula, 1);
         contagemGlobal.splice(celula, 1);
         mostrarCelulas();
@@ -44,6 +44,7 @@ function removerCelula(celula){
     if(listaDeCelulas.length === 0){
         celulas.innerHTML = '';
         valorTotalCelulas.textContent = '';
+        botaoImprimir.classList.add('ocultar');
     }
 }
 
@@ -60,21 +61,17 @@ function somarCelulas(){
     let total = 0;
     for (let celula of contagemGlobal) {
     total += celula;
-    if (total == 100){
-        botaoAdicionarCelula.classList.add('disable');
+    if (total === 100){
+        botaoAdicionarCelula.classList.add('ocultar');
+        botaoImprimir.classList.remove('ocultar')
         valorTotalCelulas.classList.add('valor__certo');
         valorTotalCelulas.classList.remove('valor__errado');
-        alert(valorCerto);
     }else if (total > 100) {
-        botaoAdicionarCelula.classList.add('disable');
+        botaoAdicionarCelula.classList.add('ocultar');
         valorTotalCelulas.classList.add('valor__errado');
         valorTotalCelulas.classList.remove('valor__certo');
         alert(valorSuperior);
-    } else {
-        valorTotalCelulas.classList.remove('valor__errado');
-        valorTotalCelulas.classList.remove('valor__certo');
-        botaoAdicionarCelula.classList.remove('disable');
-    }    
+    }   
     valorTotalCelulas.textContent = `Total: ${total}`;
     valorTotalCelulas.classList.add('mostrar__total');
     }

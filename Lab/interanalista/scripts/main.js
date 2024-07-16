@@ -24,7 +24,7 @@ function iniciar(){
 
     dadosAnalista.classList.remove('dados__analista');
     dadosAnalista.classList.add('mostrar__nav');
-    botaRealizar.classList.add('ocultar__botao');
+    botaRealizar.classList.add('ocultar');
     botaoImprimir.classList.remove('ocultar');
 }
 
@@ -37,6 +37,5 @@ function imprimir(){
     zerarBordas.classList.add('zerar_bordas')
     questao01Imprimir.classList.add('impressao');
     botaoImprimir.classList.add('ocultar');
-    
     print();
 }

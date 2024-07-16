@@ -45,10 +45,6 @@
     margin: 10px;
 }
 
-.ocultar__total{
-    display: none;
-}
-
 .valor__errado{
     color: red;
 }
@@ -58,8 +54,4 @@
 
 .mostrar__total{
     display: block;
-}
-
-.disable{
-    display: none;
 }
