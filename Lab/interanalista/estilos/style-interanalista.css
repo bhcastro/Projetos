@@ -10,7 +10,6 @@
 @import url("questao_01.css");
 @import url("questao_02.css");
 @import url("questao_03.css");
-@import url("questoes.css");
 
 
 * {
@@ -54,6 +53,11 @@ main {
     background-color: var(--cor-main);
     box-shadow: 5px 5px 10px var(--sombra-caixas);
     border-radius: 0px 0px 20px 20px;
+}
+
+.zerar_bordas{
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 @media (max-width: 500px){
