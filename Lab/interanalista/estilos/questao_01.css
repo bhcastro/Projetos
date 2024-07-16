@@ -1,4 +1,4 @@
-#questao_01 {
+.questao__01 {
     display: block;
     width: 85%;
     font-size: 1.3rem;
@@ -17,15 +17,9 @@
     list-style: none;
     padding: 3px;
 }
-
 .imagens {
     width: 12.5rem;
     height: 12.5rem;
     border-radius: 25px;
     border: 1px var(--cor01) solid;
-}
-.impressao{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
 }

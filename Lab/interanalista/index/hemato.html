@@ -25,7 +25,7 @@
         <input readonly placeholder="Data" class="seletores seletor__data" id="data" name="Data">
     </nav>
     <main>
-        <div id="questao_01">
+        <div class="questao__01">
             <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
             <ul class="lista__questao_01">
                 <li><input class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens"
@@ -41,7 +41,7 @@
                         src="../imagens/imagem_d.jpg" alt="imagem"><br></li>
             </ul>
         </div>
-        <div id="questao2">
+        <div class="questao__02">
             <h3>2 - Qual valor de reticulócitos observado?</h3>
             <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos"
                 placeholder="Ex.: 1.23" step="0.1">
@@ -62,7 +62,7 @@
                 <p class="total ocultar">Total: <span class="total__celulas"></span></p>
             </section>
         </div>
-        <input class="botoes botao__imprimir ocultar" type="button" value="Imprimir" onclick="imprimir()">
+        <input class="botoes botao__imprimir ocultar" type="button" value="Gerar PDF" onclick="gerarPDF()">
     </main>
     <footer class="rodape">
         Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img

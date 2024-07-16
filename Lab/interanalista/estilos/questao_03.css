@@ -16,15 +16,10 @@
 }
 
 .celula{
-    margin: 15px;
-    font-size: 1.2rem;
-    width: 200px;
-    height: 18px;
-    padding: 0.2rem;;
     text-align: center;
     border: 1px var(--cor01) solid;
     outline: none;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 

@@ -28,7 +28,7 @@ function iniciar(){
     botaoImprimir.classList.remove('ocultar');
 }
 
-function imprimir(){
+function gerarPDF(){
     const zerarBordas = document.querySelector('main');
     const questao01Imprimir = document.querySelector('.lista__questao_01');
     const botaoImprimir = document.querySelector('.botao__imprimir');

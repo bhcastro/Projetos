@@ -31,15 +31,15 @@
 }
 
 input{
-    font-size: 0.8em;
-    width: 12rem;
-    height: 1.2rem;
-    margin: 1rem auto;
-    padding: 0.1rem;
+    margin: 15px;
+    font-size: 1.2rem;
+    width: 200px;
+    height: 18px;
+    padding: 0.2rem;
     text-align: center;
     border: 1px var(--cor01) solid;
     outline: none;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 body {
     background-color: var(--cor02);
@@ -71,7 +71,6 @@ main {
     .cabecalho{
         width: 100vw;
     }
-
     /*NAV*/
     nav {
         flex-direction: column;
@@ -79,11 +78,9 @@ main {
         padding: 0px 0px 25px 0px;
         margin-top: -1px;
     }
-
     .seletores{
         margin: 10px auto;
     }
-
     /*BODY*/
     body {
         width: 100vw;
@@ -94,7 +91,6 @@ main {
         margin: auto;
         padding: 0;
     }
-
     /*MAIN*/
     main {
         width: 100%;
@@ -109,48 +105,27 @@ main {
         border-radius: 15px;
         padding-bottom: 0px;
     }
-
     /*QUESTÃO 01*/
-    #questao1{
+    .questao__01{
         width: 90%;
         margin: 10px auto;
         padding: 10px;
     }
-    .lista__q1{
+    .lista__questao_01{
         flex-direction: column;
     }
-
     .imagens{
         width: 200px;
         height: 200px;
     }
-
     /*QUESTÃO 02*/
-    #questao2 {
+    .questao__02 {
         width: 90%;
         margin: 10px auto;
         padding: 10px;
     }
-    .lista__q2 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 99%;
-        padding: 10px 0;
-    }
-    #questao2 li {
-        margin: 5px auto;
-    }
-    .radio {
-        margin: 10px;
-    }
-    #alt_A {
-        margin: 10px auto;
-    }
-    
-
     /*QUESTÃO 03*/
-    #questao03 {
+    .questao__03 {
         text-align: center;
         width: 90%;
         margin: 10px auto;
@@ -159,29 +134,10 @@ main {
         flex-direction: column;
         justify-content: center;
     }
-
-    .lista__q3{
-        text-align: center;
-        list-style: none;
-    }
-
-    table {
-        width: 90%;
-    }
-    textarea {
-        width: 95%;
-        margin: 10px auto;
-    }
-    li input {
-        margin: 10px;
-    }
-
     /*BOTÕES*/
-
     .div__botoes{
         width: 100%;
     }
-
     .botoes {
         text-align: center;
         font-size: 1rem;
@@ -193,7 +149,6 @@ main {
         border-radius: 15px;
         margin: auto;
     }
-
     .rodape{
         text-align: center;
         width: 75%;
