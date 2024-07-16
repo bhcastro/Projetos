@@ -4,12 +4,9 @@
 
 @import url("botoes.css");
 @import url("cabecalho.css");
-@import url("dados__analista.css");
-@import url("footer.css");
 @import url("nav.css");
-@import url("questao_03.css");
 @import url("questoes.css");
-
+@import url("footer.css");
 
 * {
     margin: 0;

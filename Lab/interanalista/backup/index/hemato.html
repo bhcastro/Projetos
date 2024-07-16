@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../estilos/style-interanalista.css">
+        <link rel="shortcut icon" href="../imagens/micro_ico.png" type="image/x-icon">
+        <title>InterLab</title>
+    </head>
+
+    <body class="corpo hemato">
+        <header class="cabecalho hemato">
+            <h1>Avaliação de Conhecimentos</h1>
+            <h2>Hematologia e Microscopia</h2>
+            <div class="div__botao">
+                <input class="botoes botao__realizar" type="button" value="Realizar Prova" onclick="iniciar()">
+            </div>
+        </header>
+        <form class="formulario" autocomplete="off" action="https://formspree.io/f/xjvqwaad" method="post">
+            <nav class="dados__analista">
+
+                <input readonly placeholder="Unidade" class="seletores seletor__unidade" id="unidade" name="Unidade">
+
+                <input readonly placeholder="ID" class="seletores seletor__id" id="id" name="Matricula">
+
+                <input readonly placeholder="Nome" class="seletores seletor__nome" id="nome" name="Nome">
+
+                <input readonly placeholder="Data" class="seletores seletor__data" id="data" name="Data">
+            </nav>
+            <main>       
+                <div id="questao1">
+                    <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
+
+                        <ul class="lista__q1">
+                            <li><input class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens" src="../imagens/basofilo.jpg" alt="imagem"></li>
+                        
+                            <li><input class="inputs" type="text" name="Imagem B" placeholder="Digite"><br><img class="imagens" src="../imagens/linfo.jpg" alt="imagem"></li>
+                        
+                            <li><input class="inputs" type="text" name="Imagem C" placeholder="Digite"><br><img class="imagens" src="../imagens/neutro.jpg" alt="imagem"></li>
+
+                            <li><input class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens" src="../imagens/oxalato.jpg" alt="imagem"><br></li>
+                        </ul>
+                    </div>
+                <div id="questao2">
+                    <h3>2 - Efetuada a leitura da lâmina de reticulócitos, responda:</h3>
+                    <ul class="lista__q2">
+                        <li>
+                            Qual valor observado?
+                            <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos" placeholder="Ex.: 1.23" step="0.1">
+                        </li>
+                        <li>
+                            Este valor está dentro da referência?
+                            <input name="Valor dentro da referência?" class="radio" value="Sim" type="radio">Sim
+                            <input name="Valor dentro da referência?" class="radio" value="Não" type="radio">Não
+                        </li>
+                    </ul>
+                </div>
+                <div id="questao03">
+                    <h3>3 - Leitura da lâmina:</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="A1" scope="colgroup">Célula visualizada</th>
+                                <th class="B1" scope="colgroup">Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="A1">Blastos</td>
+                                <td class="B1"><input class="celulas" id="cel_1" name="Blastos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Mieloblastos</td>
+                                <td class="B1"><input class="celulas" id="cel_2" name="Mieloblastos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Promielócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_3" name="Promielocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Mielócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_4" name="Mielocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Metamielócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_5" name="Metamielocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Bastonetes</td>
+                                <td class="B1"><input class="celulas" id="cel_6" name="Bastonetes" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Segmentados</td>
+                                <td class="B1"><input class="celulas" id="cel_7" name="Segmentados" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Prolinfócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_8" name="Prolinfocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Linfócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_9" name="Linfocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Linfócitos Atípicos</td>
+                                <td class="B1"><input class="celulas" id="cel_10" name="Linfocitos-Atipicos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Promonócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_11" name="Promonócitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Monócitos</td>
+                                <td class="B1"><input class="celulas" id="cel_12" name="Monocitos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1" >Eosinófilos</td>
+                                <td class="B1"><input class="celulas" id="cel_13" name="Eosinofilos" type="number" placeholder="0"></td>
+                            </tr>
+                            <tr>
+                                <td class="A1">Basófilos</td>
+                                <td class="B1"><input class="celulas" id="cel_14" name="Basofilos" type="number" placeholder="0"></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td id="total" name="Total"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input class = "botoes botao_tabela" id="calcular" type="button" value="Calcular" onclick="somar()"></td>
+                                <!-- <td><input class = "botoes botao_tabela" id="zerar__tabela" type="button" value="Zerar" onclick="zerar()"></td> -->
+                            </tr>
+                        </tfoot>    
+                    </table>
+                    <ul class="lista__q3">
+                        <li id="altA">
+                            Levando em consideração o valor de RBC, qual valor de plaquetas você liberaria?
+                        </li>
+                        <li>
+                            <input class="inputs input__plaquetas" name="Plaquetas contadas" type="number" placeholder="Ex.: 123.000">
+                        </li>
+                        <li>
+                            Alguma observação relevante?
+                        </li>
+                        <li>
+                            <textarea name="Observações" cols="50" rows="5" placeholder="Ex.: Macroplaquetas, Dacriócitos, etc."></textarea>
+                        </li>
+                    </ul>
+                </div>
+                <span class="div__botoes">
+                    <input class="botoes" id="enviar" type="submit" value= "Enviar">
+                </span>
+            </main>
+        </form>
+        <footer class="rodape">
+            Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../imagens/github.png" alt="GitHub" class="github"></a>
+        </footer>
+        <script src="../scripts/main.js"></script>
+    </body>
+</html>

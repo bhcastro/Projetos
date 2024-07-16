@@ -1,0 +1,48 @@
+
+.dados__analista{
+    display: none;
+}
+
+.mostrar__nav{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px 25px 0px;
+    background-color: var(--cor01);
+}
+
+.seletores {
+    font-family: var(--fonte-header);
+    font-weight:bold;
+    padding: 0.2rem;
+    border: 1px black solid;
+}
+
+.seletor__unidade{
+    background: url(../imagens/hospital-24px.png);
+    background-repeat: no-repeat;
+    background-position: 0.1rem center;
+    background-color: var(--cor-main);
+}
+
+.seletor__id{
+    background: url(../imagens/id-24px.png);
+    background-repeat: no-repeat;
+    background-position: 0.1rem center;
+    background-color: var(--cor-main);
+}
+
+.seletor__nome{
+    background: url(../imagens/employee-24px.png);
+    background-repeat: no-repeat;
+    background-position: 0.1rem center;
+    background-color: var(--cor-main);
+}
+
+.seletor__data{
+    background: url(../imagens/calendar-24px.png);
+    background-repeat: no-repeat;
+    background-position: 0.1rem center;
+    background-color: var(--cor-main);
+}

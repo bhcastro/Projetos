@@ -17,24 +17,28 @@
         <h2>Equipamento 1</h2>
         <div class="conteiner amostra_normal">
             <table class="resultados resultado_1">
-                <th colspan="4">
+                <th colspan="6">
                     <h3>
-                        Amostra Normal: <input class="amostra" >
+                        Amostra Normal: <input class="amostra" > <input readonly class="data" >
                     </h3>
                 </th>
                 <tr>
                     <td></td>
                     <td class="periodo">Manhã</td>
-                    <td class="periodo">Tarde (%)</td>
-                    <td class="periodo">Noite (%)</td>
+                    <td class="periodo">Tarde</td>
+                    <td class="periodo">Desvio (%)</td>
+                    <td class="periodo">Noite</td>
+                    <td class="periodo">Desvio(%)</td>
                 </tr>
                 <tr>
                     <td class="parametros">RBC</td>
-                    <td class="linha_dados"><input class="dados_brutos rbc_manha"></td>
-                    <td class="linha_dados"><input class="dados_brutos rbc_tarde"><span class="span_tarde"></span></td>
-                    <td class="linha_dados"><input class="dados_brutos rbc_noite"><span class="span_noite"></span></td>
+                    <td class="linha_dados"><input class="rbc_manha"></td>
+                    <td class="linha_dados"><input class="rbc_tarde"></td>
+                    <td class="linha_dados"><input readonly class="desvio_tarde"></td>
+                    <td class="linha_dados"><input class="rbc_noite"></td>
+                    <td class="linha_dados"><input readonly class="desvio_noite"></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td class="parametros">HB</td>
                     <td class="linha_dados hb_manha"><input class="dados_brutos"></td>
                     <td class="linha_dados hb_tarde"><input class="dados_brutos"></td>
@@ -61,11 +65,11 @@
                     <td class="linha_dados plaq_tarde"><input class="dados_brutos"></td>
                     <td class="linha_dados plaq_noite"><input class="dados_brutos"></td>
                     <td class="situacao plaq_situacao"></td>
-                </tr>
+                </tr> -->
                 <tfoot>
                     <tr>
-                        <td colspan="2"><button class="verificar" onclick="calcularTarde()">Verificar Tarde</button></td>
-                        <td colspan="2"><button class="verificar" onclick="calcularNoite()">Verificar Noite</button></td>
+                        <td colspan="3"><button class="verificar tarde" onclick="calcularTarde()">Verificar Tarde</button></td>
+                        <td colspan="3"><button class="verificar noite" onclick="calcularNoite()">Verificar Noite</button></td>
                     </tr>
                 </tfoot>
             </table>
@@ -123,11 +127,11 @@
                     </tr>
                 </tfoot>
             </table>
-        </div>
-        <textarea class="observacoes" rows="5" placeholder="Observações..."></textarea>
+        </div> -->
+        <textarea  class="observacoes" rows="5" placeholder="Observações..."></textarea>
     </section>
 
-    <section class="passagem passagem_2">
+    <!-- <section class="passagem passagem_2">
         <h2>Equipamento 2</h2>
         <div class="conteiner amostra_normal">
             <table class="resultados resultado_1">
@@ -240,10 +244,9 @@
             </table>
         </div>
         <textarea class="observacoes" rows="5" placeholder="Observações..."></textarea>
-    </section>
-    
+    </section> -->
     <span>
-        <button class="gerar_pdf" onclick="print()">Gerar PDF</button>
-    </span> -->
+        <button class="gerar_pdf" onclick="imprimir()">Gerar PDF</button>
+    </span>
 </body>
 </html>
