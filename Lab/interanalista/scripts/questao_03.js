@@ -44,6 +44,7 @@ function removerCelula(celula){
     if(listaDeCelulas.length === 0){
         celulas.innerHTML = '';
         valorTotalCelulas.textContent = '';
+        botaoAdicionarCelula.classList.remove('ocultar');
         botaoImprimir.classList.add('ocultar');
     }
 }
@@ -67,6 +68,7 @@ function somarCelulas(){
         valorTotalCelulas.classList.add('valor__certo');
         valorTotalCelulas.classList.remove('valor__errado');
     }else if (total > 100) {
+botaoImprimir.classList.add('ocultar');
         botaoAdicionarCelula.classList.add('ocultar');
         valorTotalCelulas.classList.add('valor__errado');
         valorTotalCelulas.classList.remove('valor__certo');
