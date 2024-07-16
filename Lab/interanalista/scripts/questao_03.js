@@ -71,7 +71,11 @@ function somarCelulas(){
         valorTotalCelulas.classList.add('valor__errado');
         valorTotalCelulas.classList.remove('valor__certo');
         alert(valorSuperior);
-    }   
+    } else{
+botaoAdicionarCelula.classList.remove('ocultar');
+        valorTotalCelulas.classList.remove('valor__errado');
+        valorTotalCelulas.classList.remove('valor__certo');
+      }  
     valorTotalCelulas.textContent = `Total: ${total}`;
     valorTotalCelulas.classList.add('mostrar__total');
     }
