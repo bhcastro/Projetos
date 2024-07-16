@@ -1,15 +1,14 @@
 function iniciar(){
-
+    const botaoImprimir = document.querySelector('.botao__imprimir');
     const botaRealizar = document.querySelector('.botao__realizar');
     const dadosAnalista = document.querySelector('nav');
 
     let analista = prompt ('Digite seu nome:');
-    document.getElementById('nome').value = analista;
-
     let matricula = prompt ('Digite seu ID:');
-    document.getElementById('id').value = matricula;
-
     let filial = prompt ('Digite sua unidade:');
+
+    document.getElementById('id').value = matricula;
+    document.getElementById('nome').value = analista;
     document.getElementById('unidade').value = filial;
 
     let data = new Date();
@@ -26,4 +25,15 @@ function iniciar(){
     dadosAnalista.classList.remove('dados__analista');
     dadosAnalista.classList.add('mostrar__nav');
     botaRealizar.classList.add('ocultar__botao');
+    botaoImprimir.classList.remove('ocultar');
+}
+
+function imprimir(){
+    const questao01Imprimir = document.querySelector('.lista__questao_01');
+    const botaoImprimir = document.querySelector('.botao__imprimir');
+    const seletor = document.querySelector('.seletor');
+    seletor.classList.add('ocultar');
+    questao01Imprimir.classList.add('impressao');
+    botaoImprimir.classList.add('ocultar');
+    print();
 }

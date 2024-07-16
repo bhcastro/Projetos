@@ -1,0 +1,26 @@
+#questao2 {
+    display: auto;
+    width: 85%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--cor-fundo-questoes);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 30px 30px;
+    box-shadow: 5px 5px 10px var(--sombra-caixas);
+    border: 0.5px solid var(--cor-bordas);
+}
+
+.lista__q2{
+    text-align: left;
+    list-style-position: inside;
+    list-style: none;
+    padding: 15px;
+}
+
+.radio {
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    margin: 5px;
+}

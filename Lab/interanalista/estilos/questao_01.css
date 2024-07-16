@@ -1,0 +1,31 @@
+#questao_01 {
+    display: block;
+    width: 85%;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: var(--cor-fundo-questoes);
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 30px 30px;
+    box-shadow: 5px 5px 10px var(--sombra-caixas);
+    border: 0.5px solid var(--cor-bordas);
+}
+.lista__questao_01 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    padding: 3px;
+}
+
+.imagens {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 25px;
+    border: 1px var(--cor01) solid;
+}
+.impressao{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}

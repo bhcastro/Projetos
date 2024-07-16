@@ -8,7 +8,6 @@
     cursor: pointer;
     font-weight: bolder;
 }
-
 .div__botao{
     text-align: center;
     margin-top: 30px;
@@ -16,18 +15,25 @@
 .ocultar__botao{
     display: none;
 }
-
 .botao__realizar{
     width: 150px;
 }
 .botoes:hover {
     background-color: var(--caixas-preenchimento);
-
 }
-
 .div__botoes{
     width: 50%;
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
+}
+.botao__imprimir{
+    margin: 1rem auto;
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: 100px;
+}
+
+.ocultar{
+    display: none;
 }
