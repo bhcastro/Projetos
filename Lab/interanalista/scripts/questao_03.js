@@ -74,6 +74,8 @@ botaoImprimir.classList.add('ocultar');
         valorTotalCelulas.classList.remove('valor__certo');
         alert(valorSuperior);
     } else{
+botaoImprimir.classList.add('ocultar');
+
 botaoAdicionarCelula.classList.remove('ocultar');
         valorTotalCelulas.classList.remove('valor__errado');
         valorTotalCelulas.classList.remove('valor__certo');
