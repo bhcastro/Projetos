@@ -1,0 +1,11 @@
+.botoes{
+    margin: 20px auto;
+    width: 200px;
+    font-size: 0.8em;
+    border-radius: 10px;
+}
+.botoes:hover{
+    cursor: pointer;
+    color: var(--cor-fundo-seletores);
+    background-color: black;
+}

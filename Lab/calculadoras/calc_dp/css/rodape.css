@@ -1,0 +1,24 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--fundo_footer);
+    border: 1px black solid;
+}   
+
+.rodape:hover{
+    background-color: var(--cor_fundo);
+    border: 2px black solid;
+    cursor: default
+}
+
+#github{
+    position: relative;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+}
