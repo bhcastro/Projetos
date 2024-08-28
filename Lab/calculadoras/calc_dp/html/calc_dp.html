@@ -13,44 +13,15 @@
         <hr>
     </header>
     <main>
-        <div class="calculadora calculadora__desvio-padrao">
-            <p>
-                Insira os valores para o cálculo da média:
-            </p>
-            <span id="span__valor__calculo">
-                <input class="valores" id="valor__calculo">
-                <img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/24/add-1-icon.png" width="24" height="24">
-            </span>
-
-            <ol>
-                <li>
-                    <input class="valores valores__media" type="number" readonly> <span id="botao__remover"><img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/24/trash-icon.png" width="24" height="24">
-                    </span>
-                </li>
-            </ol>
-            <p>
-                Média:<input class="valores media" type="number" readonly>
-            </p>
-            <p>
-                Limite máximo:<input class="valores media" type="number" readonly>
-            </p>
-            <p>
-                Limite Mínimo:<input class="valores media" type="number" readonly>
-            </p>
-            <p>
-                1 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <p>
-                2 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <p>
-                3 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <input class="botoes reset" type="button" value="Limpar" onclick="location.reload()">
-            <article id="fontes">
-                Entenda o cálculo e veja a fonte clicando <a href="https://hemoclass.com.br/mostrar-blog/correcao-de-eritroblastos/65">aqui!</a>
-            </article>    
-        </div>            
+    <input id="input__valores">
+<button id="botao__calcular" onclick="pegarValores()">Adicionar</button><br>
+<p>Média: 
+    <input readonly id="output__media">
+    </p>
+<p>
+    Desvio: 
+    <input readonly id="output__desvio">
+</p>
     </main>
     <script src="../scripts/calc_dp.js"></script>
 </body>

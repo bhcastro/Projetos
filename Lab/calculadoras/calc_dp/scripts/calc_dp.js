@@ -1,31 +1,62 @@
-let calculo = document.querySelector('.calc__eritro');
+const inputValores = document.getElementById('input__valores');
+const valoresMedia = [9,10,11,13];
+const valoresIntervalo = [];
+const outputMedia = document.getElementById('output__media');
+const outputDesvio = document.getElementById('output__desvio');
+let media = 0;
 
-function calcular(){
 
-    let leucocitos = document.getElementById('valor__leuco').value;
-    
-    if (leucocitos.length == 0) {
-        alert('Digite o valor de Leucócitos!');        
-    }
-    console.log(`Leuco: ${leucocitos}`);
-
-    let eritroblastos = document.getElementById('valor__ret').value;
-    
-    if (eritroblastos.length == 0) {
-        alert('Digite o valor de Eritroblastos!');        
-    }
-    console.log(`Eritro: ${eritroblastos}`);
-
-    let leucocitosTotais = Number(leucocitos) * 100;
-    console.log(leucocitosTotais);
-
-    let eritroblastosTotais = Number(eritroblastos) + 100;
-    console.log(eritroblastosTotais);
-
-    let leucocitosCorrigidos = leucocitosTotais / eritroblastosTotais;
-    console.log(`Leucos corrigidos ${leucocitosCorrigidos}`);
-
-    document.querySelector('.leuco__corrigido').value = leucocitosCorrigidos.toFixed(3);
-
+function pegarValores() {
+    let valorInput = Number(inputValores.value);
+    valoresMedia.push(valorInput);
+    calcularMedia();
+    inputValores.value = "";
+    inputValores.focus();
 }
-calculo.onclick = calcular;
+
+function calcularMedia() {
+    let valorMedia = 0;
+    for (let i = 0; i < valoresMedia.length; i++) {
+        valorMedia += valoresMedia[i];
+    }
+    let media = valorMedia / valoresMedia.length;
+    media = media.toFixed(2);
+    mostrarValores(outputMedia, media);
+    calcularIntervalos(media);
+}
+
+function calcularIntervalos(valorM) {
+    for (let i = 0; i < valoresMedia.length; i++) {
+        intervalo = 0;
+        let intervaloQuadrado = 0;
+        intervalo = valoresMedia[i] - valorM;
+        // intervaloQuadrado = intervalo * intervalo;
+        // valoresIntervalo.push(intervaloQuadrado);
+    }
+    console.log(`Intervalo: ${intervalo}`);
+    
+    
+    //calcularDesvio();
+}
+
+// function calcularDesvio() {
+//     let raizDesvio = 0;
+//     let totalIntervalo = 0;
+//     let desvio = 0;
+//     for (let i = 0; i < valoresIntervalo.length; i++) {
+//         totalIntervalo += valoresIntervalo[i];
+//     }
+//     desvio = totalIntervalo / valoresMedia.length;
+//     raizDesvio = Math.sqrt(desvio);
+//     raizDesvio = raizDesvio.toFixed(2);
+//     mostrarValores(outputDesvio, raizDesvio);
+
+    
+    // console.log(`Total do intervalo: ${totalIntervalo}`);
+    // console.log(`Total do desvio: ${desvio}`);
+    // console.log(`Lista de intervalos: ${valoresIntervalo}`);
+//}
+
+function mostrarValores(output, valor) {
+    output.value = valor;
+}
