@@ -1,62 +1,62 @@
 const inputValores = document.getElementById('input__valores');
-const valoresMedia = [9,10,11,13];
+const valoresMedia = [];
 const valoresIntervalo = [];
 const outputMedia = document.getElementById('output__media');
-const outputDesvio = document.getElementById('output__desvio');
-let media = 0;
-
+const outputDesvio1 = document.getElementById('output__desvio__1');
+const outputDesvio2 = document.getElementById('output__desvio__2');
+const outputDesvio3 = document.getElementById('output__desvio__3');
+const outputDesvioAlto = document.getElementById('output__desvio__alto');
+const outputDesvioBaixo = document.getElementById('output__desvio__baixo');
 
 function pegarValores() {
     let valorInput = Number(inputValores.value);
-    valoresMedia.push(valorInput);
-    calcularMedia();
-    inputValores.value = "";
-    inputValores.focus();
+    if(!isNaN(valorInput) && valorInput > 0){
+        valoresMedia.push(valorInput);
+        calcularMedia();
+        inputValores.value = "";
+        inputValores.focus();
+    }else{
+        alert(`${inputValores.value} não é um número válido!`);
+    }
 }
 
 function calcularMedia() {
-    let valorMedia = 0;
-    for (let i = 0; i < valoresMedia.length; i++) {
-        valorMedia += valoresMedia[i];
-    }
-    let media = valorMedia / valoresMedia.length;
+    let media = valoresMedia.reduce((acc, val) => acc + val) / valoresMedia.length;
     media = media.toFixed(2);
     mostrarValores(outputMedia, media);
-    calcularIntervalos(media);
-}
-
-function calcularIntervalos(valorM) {
-    for (let i = 0; i < valoresMedia.length; i++) {
-        intervalo = 0;
-        let intervaloQuadrado = 0;
-        intervalo = valoresMedia[i] - valorM;
-        // intervaloQuadrado = intervalo * intervalo;
-        // valoresIntervalo.push(intervaloQuadrado);
     }
-    console.log(`Intervalo: ${intervalo}`);
-    
-    
-    //calcularDesvio();
+
+function calcularIntervalos() {
+    let intervalo = 0
+    let media = valoresMedia.reduce((acc, val) => acc + val) / valoresMedia.length;
+    for (let i = 0; i < valoresMedia.length; i++) {
+        intervalo = (valoresMedia[i] - media) ** 2;
+        valoresIntervalo.push(intervalo);
+    }
+    calcularDesvio();
 }
 
-// function calcularDesvio() {
-//     let raizDesvio = 0;
-//     let totalIntervalo = 0;
-//     let desvio = 0;
-//     for (let i = 0; i < valoresIntervalo.length; i++) {
-//         totalIntervalo += valoresIntervalo[i];
-//     }
-//     desvio = totalIntervalo / valoresMedia.length;
-//     raizDesvio = Math.sqrt(desvio);
-//     raizDesvio = raizDesvio.toFixed(2);
-//     mostrarValores(outputDesvio, raizDesvio);
+function calcularDesvio(){
+    let totalDesvio = valoresIntervalo.reduce((acc, val) => (acc + val));
+    let desvio = totalDesvio / valoresIntervalo.length;
+    let raizDesvio= Math.sqrt(desvio);
+    calcularLimites(raizDesvio);
+}
 
-    
-    // console.log(`Total do intervalo: ${totalIntervalo}`);
-    // console.log(`Total do desvio: ${desvio}`);
-    // console.log(`Lista de intervalos: ${valoresIntervalo}`);
-//}
+function calcularLimites(valorDesvio){
+    let media = valoresMedia.reduce((acc, val) => acc + val) / valoresMedia.length;
+    let desvio1 = valorDesvio;
+    let desvio2 = valorDesvio * 2;
+    let desvio3 = valorDesvio * 3;
+    let limiteAlto = media + desvio3;
+    let limiteBaixo = media - desvio3;
+    mostrarValores(outputDesvio1, desvio1.toFixed(2));
+    mostrarValores(outputDesvio2, desvio2.toFixed(2));
+    mostrarValores(outputDesvio3, desvio3.toFixed(2));
+    mostrarValores(outputDesvioAlto, limiteAlto.toFixed(2));
+    mostrarValores(outputDesvioBaixo, limiteBaixo.toFixed(2));
+}
 
-function mostrarValores(output, valor) {
-    output.value = valor;
+function mostrarValores(saida, valor) {
+    saida.value = valor;
 }

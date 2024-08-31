@@ -17,11 +17,23 @@
 <button id="botao__calcular" onclick="pegarValores()">Adicionar</button><br>
 <p>Média: 
     <input readonly id="output__media">
-    </p>
-<p>
-    Desvio: 
-    <input readonly id="output__desvio">
 </p>
+<p>
+    Limite Alto: <input readonly id="output__desvio__alto">
+</p>
+<p>
+    Limite baixo: <input readonly id="output__desvio__baixo">
+</p>
+<p>
+    1 DP: <input readonly id="output__desvio__1">
+</p>
+<p>
+    2 DP: <input readonly id="output__desvio__2">
+</p>
+<p>
+    3 DP: <input readonly id="output__desvio__3">
+</p>
+<button id="calcular" onclick="calcularIntervalos()">Calcular</button>
     </main>
     <script src="../scripts/calc_dp.js"></script>
 </body>
