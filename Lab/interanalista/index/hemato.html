@@ -15,7 +15,7 @@
         <h1>Avaliação de Conhecimentos</h1>
         <h2>Hematologia e Microscopia</h2>
         <div class="div__botao">
-            <input class="botoes botao__realizar" type="button" value="Realizar Prova" onclick="iniciar()">
+            <input class="botoes botao__realizar" type="button" value="Realizar Prova" onclick="pegarDados()">
         </div>
     </header>
     <nav class="dados__analista">
@@ -24,27 +24,19 @@
         <input readonly placeholder="Nome" class="seletores seletor__nome" id="nome" name="Nome">
         <input readonly placeholder="Data" class="seletores seletor__data" id="data" name="Data">
     </nav>
-    <main>
+    <main id="div__main" class="ocultar">
         <div class="questao__01">
             <h3 name="Questão 1">1 - Identifique as estruturas:</h3>
             <ul class="lista__questao_01">
-                <li><input class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens"
-                        src="../imagens/imagem_a.jpg" alt="imagem"></li>
-
-                <li><input class="inputs" type="text" name="Imagem B" placeholder="Digite"><br><img class="imagens"
-                        src="../imagens/imagem_b.jpg" alt="imagem"></li>
-
-                <li><input class="inputs" type="text" name="Imagem C" placeholder="Digite"><br><img class="imagens"
-                        src="../imagens/imagem_c.jpg" alt="imagem"></li>
-
-                <li><input class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens"
-                        src="../imagens/imagem_d.jpg" alt="imagem"><br></li>
+                <li><input required class="inputs" type="text" name="Imagem A" placeholder="Digite"><br><img class="imagens"src="../imagens/imagem_a.jpg" alt="imagem"></li>
+                <li><input required class="inputs" type="text" name="Imagem B" placeholder="Digite"><br><img class="imagens" src="../imagens/imagem_b.jpg" alt="imagem"></li>
+                <li><input required class="inputs" type="text" name="Imagem C" placeholder="Digite"><br><img class="imagens" src="../imagens/imagem_c.jpg" alt="imagem"></li>
+                <li><input required class="inputs" type="text" name="Imagem D" placeholder="Digite"><br><img class="imagens" src="../imagens/imagem_d.jpg" alt="imagem"><br></li>
             </ul>
         </div>
         <div class="questao__02">
             <h3>2 - Qual valor de reticulócitos observado?</h3>
-            <input class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos"
-                placeholder="Ex.: 1.23" step="0.1">
+            <input required class="inputs" id="alt_A" type="number" id="iQUESTAO02" name="Valor de reticulócitos" placeholder="Ex.: 1.23" step="0.1">
         </div>
         <div class="questao__03">
             <h3>3 - Contagem diferencial:</h3>

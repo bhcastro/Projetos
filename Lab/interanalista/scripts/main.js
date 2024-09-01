@@ -1,8 +1,13 @@
+function pegarDados() {
+    const divMain = document.getElementById('div__main');
+    divMain.classList.remove('ocultar');
+    iniciar();
+}
+
 function iniciar(){
     const botaoImprimir = document.querySelector('.botao__imprimir');
     const botaRealizar = document.querySelector('.botao__realizar');
     const dadosAnalista = document.querySelector('nav');
-
     let analista = prompt ('Digite seu nome:');
     let matricula = prompt ('Digite seu ID:');
     let filial = prompt ('Digite sua unidade:');
@@ -25,7 +30,6 @@ function iniciar(){
     dadosAnalista.classList.remove('dados__analista');
     dadosAnalista.classList.add('mostrar__nav');
     botaRealizar.classList.add('ocultar');
-    botaoImprimir.classList.remove('ocultar');
 }
 
 function gerarPDF(){
