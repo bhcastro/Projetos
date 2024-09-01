@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.cabecalho{
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+    width: fit-content;
+    margin: 25px auto;
+    font-size: 3.5em;
+}
+
+.seletores{
+    display: none;
+}
+
+#seletor__calculadora{
+    display: flex;
+    justify-content: center;
+    gap: 310px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.calc__seletor{
+    padding: 5px;
+    font-size: 1.5em;
+    border: 0.5px var(--cor-bordas) solid;
+    box-shadow: 0px 0px 10px var(--cor-sombras);
+    border-radius: 6px;
+}
+.calc__seletor:hover{
+    cursor: pointer;
+    background-color: var(--cor-fundo-seletores);
+}

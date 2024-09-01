@@ -15,25 +15,25 @@
     <main>
         <div class="calculadoras calculadora__eritroblastos">
             <p>
-                Valor de Leucócitos contados pelo equipamento: <input  maxlength="7" autocomplete="off" placeholder="Ex.: 12.345" class="valores" id="valor__leuco">
+                Valor de Leucócitos contados pelo equipamento:
             </p>
+            <input  maxlength="7" autocomplete="off" placeholder="Ex.: 12.345" class="valores" id="valor__leuco">
             <p>
-                Valor de Eritroblastos contados em lâmina: <input type="number" autocomplete="off" placeholder="Ex.: 10" class="valores" id="valor__ret">
+                Valor de Eritroblastos contados em lâmina:
             </p>
-            <p>
-                Valor de Leucócitos corrigido: <input step=".0" readonly placeholder="Calculando..." class="valores leuco__corrigido">
-            </p>
-
+            <input type="number" autocomplete="off" placeholder="Ex.: 10" class="valores" id="valor__ret">
             <input class="botoes calc__eritro" type="button" value="Calcular">
-
+            <p>
+                Valor de Leucócitos corrigido:
+            </p>
+            <input step=".0" readonly class="valores leuco__corrigido" placeholder="Calculando">
             <input class="botoes reset" type="button" value="Limpar" onclick="location.reload()">
-
             <article id="fontes">
-                Entenda o cálculo e veja a fonte clicando <a href="https://hemoclass.com.br/mostrar-blog/correcao-de-eritroblastos/65">aqui</a>
+                Entenda o cálculo e veja a fonte clicando <a href="https://hemoclass.com.br/mostrar-blog/correcao-de-eritroblastos/65">aqui!</a>
             </article>    
         </div>            
     </main>
-    <script src="../scripts/calculos.js"></script>
+    <script src="../scripts/calc_eritro.js"></script>
 </body>
 <footer>
     <p class="rodape">Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img id="github" src="../imagens/github.png" alt="GitHub Site"></a></p>

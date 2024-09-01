@@ -1,0 +1,35 @@
+.calculadora{
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    background-color: var(--cor-fundo-seletores);
+    border-radius: 10px;
+    border: 0.5px var(--cor-bordas) solid;
+    box-shadow: 0px 0px 10px var(--cor-sombras);
+    font-size: 1.8em;
+}
+.valores{
+    margin: 0.5rem;
+    text-align: center;
+    width: 7.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+#fontes{
+    font-size: 1em;
+    padding: 5px;
+}
+a{
+    cursor: pointer;
+}
+
+#input__valores{
+    cursor: text;
+}

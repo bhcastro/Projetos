@@ -6,25 +6,26 @@
 @import url(rodape.css);
 @import url(botoes.css);
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-   --cor-fundo: #e1e0e0;
-   --cor-bordas: #00000080;
-   --cor-sombras:#000000a1;
-   --cor-fundo-seletores: #ffffff;
-   --fundo_footer: #0000003b
+:root {
+    --cor-fundo: #e1e0e0;
+    --cor-bordas: #00000080;
+    --cor-sombras: #000000a1;
+    --cor-fundo-seletores: #ffffff;
+    --fundo_footer: #0000003b
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
+    font-weight: 700;
 }
 
-.corpo{
+.corpo {
     background-color: var(--cor-fundo);
 }

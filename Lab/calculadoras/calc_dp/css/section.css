@@ -1,0 +1,16 @@
+#div__media{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 10px;
+}
+
+p{
+    margin: 5px;
+}
+
+.ocultar{
+    display: none;
+}

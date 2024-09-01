@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/calc_ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Calculadora</title>
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1 id="titulo">Calculadora de Desvio Padrão</h1>
+        <hr>
+    </header>
+    <main>
+    <input id="input__valores">
+<button id="botao__calcular" onclick="pegarValores()">Adicionar</button><br>
+<p>Média: 
+    <input readonly id="output__media">
+</p>
+<p>
+    Limite Alto: <input readonly id="output__desvio__alto">
+</p>
+<p>
+    Limite baixo: <input readonly id="output__desvio__baixo">
+</p>
+<p>
+    1 DP: <input readonly id="output__desvio__1">
+</p>
+<p>
+    2 DP: <input readonly id="output__desvio__2">
+</p>
+<p>
+    3 DP: <input readonly id="output__desvio__3">
+</p>
+<button id="calcular" onclick="calcularIntervalos()">Calcular</button>
+    </main>
+    <script src="../scripts/calc_dp.js"></script>
+</body>
+<footer>
+    <p class="rodape">Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img id="github" src="../img/github.png" alt="GitHub"></a></p>
+</footer>
+</html>

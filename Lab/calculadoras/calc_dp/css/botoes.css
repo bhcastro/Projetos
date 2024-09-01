@@ -1,0 +1,18 @@
+.botoes{
+    cursor: pointer;
+    margin: 20px auto;
+    width: 200px;
+    font-size: 0.8em;
+    border-radius: 25px;
+    outline: none;
+}
+.botoes:hover{
+    background-color: var(--fundo_footer);
+}
+.botoes:active{
+    background-color: #00000078;
+}
+
+img{
+    cursor: pointer;
+}
