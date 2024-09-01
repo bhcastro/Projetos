@@ -1,4 +1,5 @@
 const inputValores = document.getElementById('input__valores');
+const listaValores = document.getElementById('lista__valores');
 const valoresMedia = [];
 const valoresIntervalo = [];
 const outputMedia = document.getElementById('output__media');
@@ -13,10 +14,31 @@ function pegarValores() {
     if(!isNaN(valorInput) && valorInput > 0){
         valoresMedia.push(valorInput);
         calcularMedia();
+        calcularIntervalos()
+        listarValores();
         inputValores.value = "";
         inputValores.focus();
     }else{
-        alert(`${inputValores.value} não é um número válido!`);
+        alert(`Digite um número válido!`);
+    }
+}
+
+function removerValor(index) {
+    const excluirValor = confirm(`Remover ${valoresMedia[index]}?`);
+    if(valoresMedia.length === 1 || valoresIntervalo.length === 1) {
+        valoresMedia.splice(index, 1);
+        valoresIntervalo.splice(index, 1);
+        calcularIntervalos()
+        listarValores();
+        outputMedia.value = '';
+    }else if (excluirValor === true) {
+        valoresMedia.splice(index, 1);
+        valoresIntervalo.splice(index, 1);
+        calcularMedia();
+        calcularIntervalos()
+        listarValores();
+    }else{
+        listarValores()
     }
 }
 
@@ -41,6 +63,7 @@ function calcularDesvio(){
     let desvio = totalDesvio / valoresIntervalo.length;
     let raizDesvio= Math.sqrt(desvio);
     calcularLimites(raizDesvio);
+    listarValores
 }
 
 function calcularLimites(valorDesvio){
@@ -50,6 +73,9 @@ function calcularLimites(valorDesvio){
     let desvio3 = valorDesvio * 3;
     let limiteAlto = media + desvio3;
     let limiteBaixo = media - desvio3;
+    if (limiteBaixo <= 0){
+        limiteBaixo = 0;
+    }
     mostrarValores(outputDesvio1, desvio1.toFixed(2));
     mostrarValores(outputDesvio2, desvio2.toFixed(2));
     mostrarValores(outputDesvio3, desvio3.toFixed(2));
@@ -59,4 +85,16 @@ function calcularLimites(valorDesvio){
 
 function mostrarValores(saida, valor) {
     saida.value = valor;
+}
+
+function listarValores(){
+    let novoValor = '';
+    valoresMedia.forEach((_, index) => {novoValor += 
+        `<li>
+            Valor ${index+1}= ${valoresMedia[index]}
+            <img  id="botao__remover" src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/24/trash-icon.png" width="24" height="24" onclick="removerValor(${index})">
+        </li>`});
+    listaValores.innerHTML = novoValor
+    inputValores.value = "";
+    inputValores.focus();
 }

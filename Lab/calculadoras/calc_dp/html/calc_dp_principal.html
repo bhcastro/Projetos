@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/calc_ico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Calculadora</title>
 </head>
+
 <body class="corpo">
     <header class="cabecalho">
         <h1 id="titulo">Calculadora de Desvio Padrão</h1>
         <hr>
     </header>
-    <main>
-        <div class="calculadora calculadora__desvio-padrao">
-            <p>
-                Insira os valores para o cálculo da média:
+    <main class="calculadora calculadora__desvio-padrao">
+        <section id="div__media">
+            <p id="span__valor__calculo">Insira o valor:
+                <input class="valores" id="input__valores">
+                <img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/24/add-1-icon.png"
+                    width="24" height="24" onclick="pegarValores()">
             </p>
-            <span id="span__valor__calculo">
-                <input class="valores" id="valor__calculo">
-                <img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/24/add-1-icon.png" width="24" height="24">
-            </span>
-
-            <ol>
-                <li>
-                    <input class="valores valores__media" type="number" readonly> <span id="botao__remover"><img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/24/trash-icon.png" width="24" height="24">
-                    </span>
-                </li>
-            </ol>
+            <ul id="lista__valores">
+            </ul>
             <p>
-                Média:<input class="valores media" type="number" readonly>
+                Média:<input class="valores" id="output__media" type="number" readonly>
             </p>
-            <p>
-                Limite máximo:<input class="valores media" type="number" readonly>
-            </p>
-            <p>
-                Limite Mínimo:<input class="valores media" type="number" readonly>
-            </p>
-            <p>
-                1 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <p>
-                2 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <p>
-                3 DP: <input class="valores valores__dp" type="number" readonly>
-            </p>
-            <input class="botoes reset" type="button" value="Limpar" onclick="location.reload()">
-            <article id="fontes">
-                Entenda o cálculo e veja a fonte clicando <a href="https://hemoclass.com.br/mostrar-blog/correcao-de-eritroblastos/65">aqui!</a>
-            </article>    
-        </div>            
+        </section>
+        <section id="div__valores" >
+            <p>Limite máximo:<input class="valores" id="output__desvio__alto" type="number" readonly></p>
+            <p>Limite Mínimo:<input class="valores" id="output__desvio__baixo" type="number" readonly></p>
+            <p>1 DP: <input class="valores" id="output__desvio__1" type="number" readonly></p>
+            <p>2 DP: <input class="valores" id="output__desvio__2" type="number" readonly></p>
+            <p>3 DP: <input class="valores" id="output__desvio__3" type="number" readonly></p>
+        </section>
     </main>
+    <article id="fontes">
+            Entenda o cálculo e veja a fonte clicando <a href="https://mundoeducacao.uol.com.br/matematica/desvio-padrao.htm" target="_blank" >aqui!</a>
+        </article>
     <script src="../scripts/calc_dp.js"></script>
 </body>
 <footer>
-    <p class="rodape">Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img id="github" src="../img/github.png" alt="GitHub"></a></p>
+    <p class="rodape">
+        Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img id="github" src="../img/github.png" alt="GitHub"></a>
+    </p>
 </footer>
 </html>

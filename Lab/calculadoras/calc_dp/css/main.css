@@ -1,32 +1,35 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-@import url(header.css);
-@import url(calculadoras.css);
-@import url(rodape.css);
-@import url(botoes.css);
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.calculadora{
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 50%;
+    background-color: var(--cor-fundo-seletores);
+    border-radius: 10px;
+    border: 0.5px var(--cor-bordas) solid;
+    box-shadow: 0px 0px 10px var(--cor-sombras);
+    font-size: 1.8em;
+}
+.valores{
+    margin: 0.5rem;
+    text-align: center;
+    width: 7.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
 }
 
-:root {
-    --cor-fundo: #e1e0e0;
-    --cor-bordas: #00000080;
-    --cor-sombras: #000000a1;
-    --cor-fundo-seletores: #ffffff;
-    --fundo_footer: #0000003b
+#fontes{
+    font-size: 1em;
+    padding: 5px;
+}
+a{
+    cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-}
-
-.corpo {
-    background-color: var(--cor-fundo);
+#input__valores{
+    cursor: text;
 }
