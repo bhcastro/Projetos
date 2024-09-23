@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="repro.js"></script>
-    <link rel="stylesheet" href="repro.css">
+    <!-- <link rel="stylesheet" href="repro.css"> -->
 </head>
 <body>
     <header>
@@ -16,16 +16,19 @@
     <section class="passagem passagem_1">
         <h2>Equipamento 1</h2>
         <div class="conteiner amostra_normal">
-            <span>HB<input id="hb__manha__1" type="number" placeholder="Manhã"></span>
-            <span>HB<input id="hb__tarde__1" type="number" placeholder="Tarde"></span>
-            <span>HB<input id="hb__noite__1" type="number" placeholder="Noite"></span>
-            <span id="output__hb__tarde__1"></span><br>
-            <button class="gerar_pdf" onclick="calcular(hbManha1, hbTarde1)">Calcular</button><br>
-            <span>HT<input id="ht__manha__1" type="number" placeholder="Manhã"></span>
-            <span>HT<input id="ht__tarde__1" type="number" placeholder="Tarde"></span>
-            <span>HT<input id="ht__noite__1" type="number" placeholder="Noite"></span>
-            <span id="output__ht__tarde__1"></span><br>
-            <button class="gerar_pdf" onclick="calcular(htM1, htT1)">Calcular</button>
+            <section id="conteiner__hb">
+                <span>HB<input id="hb__manha__1" type="number" placeholder="Manhã"></span>
+                <span>HB<input id="hb__tarde__1" type="number" placeholder="Tarde"></span>
+                <span>HB<input id="hb__noite__1" type="number" placeholder="Noite"></span>
+                <span id="output__hb__tarde__1"></span>
+            </section>
+            <section id="conteiner__ht">
+                <span>HT<input id="ht__manha__1" type="number" placeholder="Manhã"></span>
+                <span>HT<input id="ht__tarde__1" type="number" placeholder="Tarde"></span>
+                <span>HT<input id="ht__noite__1" type="number" placeholder="Noite"></span>
+                <span id="output__ht__tarde__1"></span>
+            </section>
+            <button id="botao__calcular">Calcular</button>
         </div>
 </body>
 </html>

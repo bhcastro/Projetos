@@ -44,8 +44,8 @@ h1{
 }
 
 button{
-    margin: auto;
-    padding: 15px;
+    margin: 10px auto;
+    padding: 10px;
     outline: none;
     border-radius: 10px;
     border: 1px solid black;
