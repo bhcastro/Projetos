@@ -4,7 +4,7 @@ Bem vindo ao repositório de Projetos Laboratoriais!
 
 <a href="https://bhcastro.github.io/Projetos/Lab/interanalista/index/hemato.html" target="_blank">Interanalista</a>
 
-<a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/calc_eritroblastos/index/calc_eritro.html" target="_blank">Calculadora de eritroblastos</a>
+<a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/calc_eritroblastos/html/calc_eritro.html" target="_blank">Calculadora de eritroblastos</a>
 
 <a href="https://bhcastro.github.io/Projetos/Lab/calculadoras/calc_dp/html/calc_dp.html" target="_blank">Calculadora de média e desvio padrão com 3 pontos(3S).</a>
 
