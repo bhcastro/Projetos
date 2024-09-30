@@ -1,0 +1,19 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    border-top: 1px var(--azul-contraste) solid;
+    background-color: var(--azul-hover);
+    font-size: 1em;
+    cursor: default;
+}
+
+#github{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

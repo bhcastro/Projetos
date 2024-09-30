@@ -1,0 +1,38 @@
+#calc__cv{
+    display: flex;
+    font-size: 20px;
+}
+#conteiner__cv{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    padding: 5px 30px;
+}
+.valores{
+    font-size: 25px;
+    cursor: text;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--verde-padrao);
+    background-color: transparent;
+}
+.botoes__cv{
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.botoes__cv:hover{
+    background-color: rgba(204, 202, 202, 0.61);
+}

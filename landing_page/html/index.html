@@ -8,26 +8,42 @@
 </head>
 <body>
     <header>
-        <h1>LabNet</h1>
-        <nav>
-            <a href="#"><span class="input__header">Home</span></a>
-            <span class="input__header">Produtos</span>
-            <a href="#"><span class="input__header">Contato</span></a>
+        <a href="#home">
+            <h1>LabNet</h1>
+        </a>
+        <nav id="home">
+            <a href="#home"><span class="menu__header">Home</span></a>
+            <span class="menu__header">Produtos</span>
+            <a href="#"><span class="menu__header">Contato</span></a>
             <a href="#"class="button__header" id="cadastrar">Cadastrar</a>
             <button class="button__header" id="login">Login</button>
         </nav>
     </header>
-    <div id="popup__login">
-        <input class="input__popup" type="text">
-        <input class="input__popup" type="password">
-        <input class="button__popup" type="submit">
-        <a id="reset__senha" href="#">Esqueci minha senha</a>
+    <div id="calculadoras">
+        <section class="conteiner__calculadoras" id="calc__cv">
+            <div id="conteiner__cv">
+                <h3>Coeficiente de Variação (CV)</h3>
+                Valor 1: <input autocomplete="off" class="valores" id="valor__1">
+                Valor 2: <input autocomplete="off" class="valores" id="valor__2">
+                <p id="resultado" class="ocultar valores">Resultado:<br>
+                <span id="output__resultado"></span>
+                </p>
+                <button class="botoes__cv" id="botao__calcular">Calcular</button>
+                <button class="botoes__cv" id="botao__limpar">Limpar</button>
+            </div>
+            <div class="conteiner__paragrafos">
+                <article>
+                    <p class="paragrafos">
+                        O coeficiente de variação (CV) é uma medida de dispersão relativa que indica a variabilidade dos dados em relação à média. Ele é calculado como a razão entre o desvio padrão e a média, geralmente expresso em porcentagem.<br>
+                        O CV é útil para comparar a variabilidade de conjuntos de dados com unidades ou magnitudes diferentes. Um CV baixo indica que os dados estão mais concentrados em torno da média, enquanto um CV alto sugere maior dispersão.
+                    </p>
+                </article>
+            </div>
+        </section>
     </div>
-    <section>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, fugiat alias! Odit consequatur modi dolorem. Iste asperiores sunt repudiandae ut maiores, ipsam similique nostrum, in provident fugit cumque cupiditate dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis et distinctio unde culpa, sit possimus quas, vel labore quaerat asperiores deleniti nostrum dolorem est, dolores rerum modi alias ullam.
-        </p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore facere magnam doloremque! Eos recusandae obcaecati mollitia animi fugiat explicabo maiores, nulla libero delectus rerum placeat perferendis asperiores alias voluptas.</p>
-    </section>
+    <script src="../js/calc-cv.js"></script>
 </body>
+<footer class="rodape">
+    Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
+</footer>
 </html>
