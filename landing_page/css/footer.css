@@ -10,6 +10,7 @@
     background-color: var(--azul-hover);
     font-size: 1em;
     cursor: default;
+    z-index: 0;
 }
 
 #github{
