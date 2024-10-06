@@ -6,9 +6,10 @@
     height: 100%;
     background-color: var(--preto-transparente);
     z-index: 2;
+    cursor: pointer;
 }
 .ocultar{
-    display: none;
+    visibility: hidden;
 }
 
 #popup__login{
@@ -21,20 +22,13 @@
     left: 35%;
     z-index: 3;
     border: 2px solid var(--preto-padrao);
-    padding: 0px;
+    padding: 30px;
     border-radius: 25px;
     background-color: var(--verde-padrao);
     opacity: 0.8;
-    height: 0px;
-    visibility: hidden;
-}
-.popup__login__ativa{
-    transition: 0.5s ease;
-    padding: 30px;
     height: 350px;
-    visibility: visible;
 }
-#dados{
+#usuario, #senha{
     text-transform: uppercase;
     cursor: text;
     width: 250px;
