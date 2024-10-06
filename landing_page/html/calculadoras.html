@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Calculadoras</title>
 </head>
+
 <body>
-    <div id="div__calculadoras">
-        
-
-
-        <section class="conteiner__calculadoras" id="calc__dp"></section>
-
-
-        <section class="conteiner__calculadoras" id="calc__eritro"></section>
-
-
-        <section class="conteiner__calculadoras" id="calc__plaq__citrato"></section>
-
-
-        <section class="conteiner__calculadoras" id="calc__plaq"></section>
-    </div>
+    <header>
+        <a href="#home">
+            <h1>LabNet</h1>
+        </a>
+        <nav id="home">
+            <a href="#home"><span class="menu__header">Home</span></a>
+            <span class="menu__header">Produtos</span>
+            <a href="#"><span class="menu__header">Contato</span></a>
+            <a href="#" class="button__header" id="cadastrar">Cadastrar</a>
+            <button class="button__header" id="login">Área do Analista</button>
+        </nav>
+    </header>
+    <main id="calculadoras">
+        <section class="conteiner__calculadoras" id="calc__cv">
+            <div id="conteiner__cv">
+                <h3>Coeficiente de Variação (CV)</h3>
+                <h5>Valor 1:</h5> <input autocomplete="off" class="valores" id="valor__1">
+                <h5>Valor 2:</h5> <input autocomplete="off" class="valores" id="valor__2">
+                <p id="resultado__cv" class="ocultar valores">Resultado:<br>
+                    <span id="output__resultado"></span>
+                </p>
+                <button class="botoes__calc" id="botao__calcular__cv">Calcular</button>
+                <button class="botoes__calc" id="botao__limpar__cv">Limpar</button>
+            </div>
+            <div class="conteiner__paragrafos">
+                <article>
+                    <p class="paragrafos">
+                        O coeficiente de variação (CV) é uma medida de dispersão relativa que indica a variabilidade dos dados em relação à média. Ele é calculado como a razão entre o desvio padrão e a média, geralmente expresso em porcentagem.<br>
+                        O CV é útil para comparar a variabilidade de conjuntos de dados com unidades ou magnitudes diferentes. Um CV baixo indica que os dados estão mais concentrados em torno da média, enquanto um CV alto sugere maior dispersão.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="conteiner__calculadoras" id="calc__eritro">
+            <div class="conteiner__paragrafos">
+                <p class="paragrafos">
+                    Eritroblastos são células imaturas que, após um processo de maturação, se transformam em hemácias. Normalmente, essas células são encontradas na medula óssea, onde ocorre a produção de células sanguíneas. No entanto, em algumas condições patológicas, os eritroblastos podem ser encontrados no sangue periférico.<br>
+                    <strong>Por que a Presença de Eritroblastos Altera a Contagem de Leucócitos?</strong><br>
+                    A maioria dos contadores automatizados utilizados em exames de sangue não consegue diferenciar eritroblastos de leucócitos. Isso ocorre porque ambos são células nucleadas. Assim, quando há um número significativo de eritroblastos no sangue, o equipamento os contabiliza como leucócitos, elevando artificialmente o valor dessa contagem.
+                </p>
+            </div>
+            <div id="conteiner__eritro">
+                <h3>Corretor de Leucócitos</h3>
+                <h5>Leucócitos contados pelo equipamento:</h5> <input autocomplete="off" class="valores" id="valor__leuco">
+                <h5>Eritroblastos contados em lâmina:</h5><input autocomplete="off" class="valores" id="valor__eritro">
+                <p id="resultado__eritro" class="ocultar valores">Leucócitos corrigidos:<br>
+                    <span id="output__resultado__eritro"></span>
+                </p>
+                <input class="botoes__calc" id="botao__calcular__eritro" type="button" value="Calcular">
+                <input class="botoes__calc" id="botao__limpar__eritro" type="button" value="Limpar">
+            </div>
+        </section>
+    </main>
+    <script src="../js/scripts_calculadoras/calc_eritro.js"></script>
+    <script src="../js/scripts_calculadoras/calc-cv.js"></script>
 </body>
+
 </html>

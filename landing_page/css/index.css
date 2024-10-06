@@ -3,6 +3,8 @@
 @import url(header.css);
 @import url(login.css);
 @import url(calc__cv.css);
+@import url(calc__eritro.css);
+@import url(calculadoras.css);
 @import url(footer.css);
 *{
     box-sizing: border-box;
@@ -38,19 +40,4 @@ body{
 }
 section{
     margin: auto;
-}
-.conteiner__calculadoras{
-    background-color: var(--azul-hover);
-}
-.conteiner__paragrafos{
-    display: flex;
-    align-items: flex-start;
-    width: 75%;
-    text-align: justify;
-    padding: 10px 30px;
-}
-.paragrafos{
-    margin: 75px auto;
-    word-spacing: 10px;
-    line-height: 40px;
 }
