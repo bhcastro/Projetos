@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url(header.css);
 @import url(login.css);
-@import url(calc__cv.css);
-@import url(calc__eritro.css);
 @import url(calculadoras.css);
 @import url(footer.css);
 *{
@@ -25,6 +23,7 @@
 }
 h3{
     margin: 20px auto;
+    text-align: center;
 }
 a{
     text-decoration: none;

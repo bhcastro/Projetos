@@ -28,6 +28,8 @@
 .conteiner__calculadoras{
     background-color: var(--azul-hover);
     border: 1px solid var(--preto-padrao);
+    display: flex;
+    font-size: 20px;
 }
 .conteiner__paragrafos{
     display: flex;
@@ -40,4 +42,13 @@
     margin: 75px auto;
     word-spacing: 10px;
     line-height: 40px;
+}
+
+.div__conteiner{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    padding: 5px 30px;
 }

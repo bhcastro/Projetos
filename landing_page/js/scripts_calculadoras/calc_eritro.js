@@ -7,14 +7,14 @@ const botaoLimparEritro = document.getElementById('botao__limpar__eritro');
 
 
 function calcularEritro(){
-    let valorLeuco = parseFloat(inputLeuco.value);
+    let valorLeuco = parseFloat(inputLeuco.value.replace(',', '.'));
     let valorEritro = parseFloat(inputEritro.value);
     if(!isNaN(valorLeuco) && !isNaN(valorEritro) && valorLeuco != 0 && valorEritro != 0){
         let leucoTotal = valorLeuco * 100;
         let eritroTotal = valorEritro + 100;
-        let valorResultado = leucoTotal/eritroTotal.toFixed(2).replace('.', ',');
-        outputResultadoEritro.textContent = `${valorResultado}%`;
-        paragrafoResultado.classList.toggle('ocultar');
+        let valorResultado = leucoTotal / eritroTotal;
+        outputResultadoEritro.innerText = (valorResultado.toLocaleString('pt-BR'));
+        paragrafoResultado.classList.remove('ocultar');
     }else{
         alert('Digite um número válido!');
     }
@@ -24,7 +24,7 @@ function limpar(){
     inputLeuco.value = "";
     inputEritro.value = "";
     paragrafoResultado.classList.add('ocultar');
-    outputResultadoEritro.textContent = "";
+    outputResultadoEritro.innerText = "";
 }
 
 botaoCalcularEritro.addEventListener('click', calcularEritro);
