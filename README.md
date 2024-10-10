@@ -1,6 +1,6 @@
 Bem vindo ao repositório de Projetos Laboratoriais!
 
-<a href="https://bhcastro.github.io/Projetos/Lab/gestao/home/index/home.html" target="_blank">Página inicial</a>
+<a href="https://bhcastro.github.io/Projetos/landing_page/html/index.html" target="_blank">Página inicial</a>
 
 <a href="https://bhcastro.github.io/Projetos/Lab/interanalista/index/hemato.html" target="_blank">Interanalista</a>
 
