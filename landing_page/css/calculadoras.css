@@ -26,7 +26,9 @@
 }
 
 .conteiner__calculadoras{
-    background-color: var(--azul-hover);
+    background: var(--azul-hover) url(../img/logos/LabNet/default_transparent_765x625.png) no-repeat center;
+    background-attachment: scroll;
+    background-size: contain;
     border: 1px solid var(--preto-padrao);
     display: flex;
     font-size: 20px;

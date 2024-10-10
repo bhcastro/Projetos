@@ -25,6 +25,8 @@
     padding: 30px;
     border-radius: 25px;
     background-color: var(--verde-padrao);
+    background-attachment: fixed;
+    background-size: contain;
     opacity: 0.8;
     height: 350px;
 }
