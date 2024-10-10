@@ -1,0 +1,60 @@
+#div__login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--preto-transparente);
+    z-index: 2;
+    cursor: pointer;
+}
+.ocultar{
+    visibility: hidden;
+}
+
+#popup__login{
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 150px;
+    left: 35%;
+    z-index: 3;
+    border: 2px solid var(--preto-padrao);
+    padding: 30px;
+    border-radius: 25px;
+    background-color: var(--verde-padrao);
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.8;
+    height: 350px;
+}
+#usuario, #senha{
+    text-transform: uppercase;
+    cursor: text;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--preto-padrao);
+}
+#botao__login{
+    cursor: pointer;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    background-color: var(--verde-hover);
+    border: 2px solid var(--preto-padrao);
+    border-radius: 25px;
+}
+#botao__login:hover{
+    background-color: var(--azul-hover);
+}

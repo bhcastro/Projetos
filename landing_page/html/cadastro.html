@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logos/LabNet/favicon_transparent_32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>LabNet</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>LabNet</h1>
+        </a>
+        <nav id="home">
+            <a href="index.html"><span class="menu__header">Home</span></a>
+            <a href="calculadoras.html"><span class="menu__header">Calculadoras</span></a>
+            <a href="#"><span class="menu__header">Contato</span></a>
+            <button class="button__header" id="login">Área do Analista</button>
+        </nav>
+    </header>
+    <div id="div__login" class="ocultar"></div>
+    <section id="popup__login" class="ocultar">
+        <input id="usuario" type="text" placeholder="Usuário" autocomplete="off">
+        <input id="senha" type="password" placeholder="Senha" autocomplete="off">
+        <input id="botao__login" type="submit" value="Entrar">
+        <a href="#">Esqueci a senha</a>
+    </section>
+    <section id="formulario__cadastro">
+        <label for="nome"><span class="dados__cadastro">Nome: </span></label><input class="inputs__cadastro" type="text" name="nome" id="nome">
+        <label for="sobrenome"><span class="dados__cadastro">Sobrenome: </span></label><input  class="inputs__cadastro"type="text" name="sobrenome" id="sobrenome">
+        <label for="email"><span class="dados__cadastro">E-mail: </span></label><input class="inputs__cadastro" type="email" name="email" id="email">
+        <label for="confirm__email"><span class="dados__cadastro">Confirme seu e-mail: </span></label><input class="inputs__cadastro" type="email" name="confirm__email" id="confirm__email">
+        <label for="senha"><span class="dados__cadastro">Senha: </span></label><input class="inputs__cadastro" type="password" name="senha__cadastro" id="senha__cadastro">
+        <label for="confirm__senha"><span class="dados__cadastro">Confirme a senha: </span></label><input class="inputs__cadastro" type="password" name="confirm__senha" id="confirm__senha">
+    </section>
+    <script src="../js/login.js"></script>
+</body>
+<footer class="rodape">
+    Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
+</footer>
+</html>

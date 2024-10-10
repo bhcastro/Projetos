@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url(cadastro.css);
+@import url(header.css);
+@import url(login.css);
+@import url(calculadoras.css);
+@import url(footer.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    font-family: var(--fonte-padrao);
+}
+:root{
+    --fonte-padrao: "Ubuntu", sans-serif;
+    --verde-padrao: #7ce7be;
+    --verde-hover: #01e08be1;
+    --azul-contraste: #202d79;
+    --azul-hover: hsl(231, 58%, 30%, 75%);
+    --branco-padrao: #ffffff;
+    --preto-padrao: #000000;
+    --preto-transparente: hsla(0, 0%, 0%, 0.45);
+}
+h3{
+    margin: 20px auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: var(--preto--padrao);
+    text-align: center;
+    cursor: pointer;
+}
+.ocultar{
+    display: none;
+}
+body{
+    margin: auto;
+}
+section{
+    margin: auto;
+}
