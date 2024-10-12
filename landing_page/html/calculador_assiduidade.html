@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logos/LabNet/favicon_transparent_32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
-    <title>LabNet</title>
+    <title>Calculador de Assiduidade</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -17,6 +18,7 @@
             <a href="index.html"><span class="menu__header">Home</span></a>
             <a href="calculadoras.html"><span class="menu__header">Calculadoras</span></a>
             <a href="#"><span class="menu__header">Contato</span></a>
+            <a href="cadastro.html" class="button" id="cadastrar">Cadastrar</a>
             <button class="button" id="login">Área do Analista</button>
         </nav>
     </header>
@@ -27,19 +29,18 @@
         <input class="button" id="botao__login" type="submit" value="Entrar">
         <a href="#">Esqueci a senha</a>
     </section>
-    <form action="#">
-        <section id="formulario__cadastro">
-            <input class="inputs__cadastro" type="text" name="nome" id="nome__cadastro" placeholder="Nome*" required>
-            <input  class="inputs__cadastro"type="text" name="sobrenome" id="sobrenome__cadastro" placeholder="Sobrenome*" required>
-            <input class="inputs__cadastro" type="email" name="email" id="email__cadastro" placeholder="E-mail*" required>
-            <input class="inputs__cadastro" type="email" name="confirm__email" id="confirm__email__cadastro" placeholder="Confirme seu E-mail*" required>
-            <input class="inputs__cadastro" type="password" name="senha__cadastro" id="senha__cadastro" placeholder="Senha*" required>
-            <input class="inputs__cadastro" type="password" name="confirm__senha" id="confirm__senha__cadastro" placeholder="Confirme sua senha*" required>
-            <input class="button" type="submit" value="Finalizar Cadastro" id="botao__finaliza__cadastro">
-            <abbr title="Campos obrigatórios">*Campos obrigatórios</abbr>
-        </section>
-        
-    </form>
+    <section class="conteiner__calculadoras" id="calculadora__assiduidade">
+        <div class="div__conteiner">
+            <h4>Dias trabalhados<abbr title="Dias contabilizados sem levar em consideração folgas e folgas de descanso.">*</abbr>: </h4><input class="valores" id="input__plantoes" autocomplete="off">
+            <h4>Faltas não justificadas<abbr title="Faltas sem justificativa tem peso 2 para a contagem final">*</abbr>: </h4><input class="valores" id="input__faltas" autocomplete="off">
+            <h4>Atestados<abbr title="Atestados somam mais 0.5 para a contagem final">*</abbr>: </h4><input class="valores" id="input__atestados" autocomplete="off">
+            <h4>Atrasos</h4><input class="valores" id="input__atrasos" autocomplete="off">
+            <p class="ocultar" id="paragrafo__assiduidade">Assiduidade: </p><span id="output__assiduidade"></span><br>
+            <button class="botoes__calc" id="botao__calc__assid">Calcular</button>
+            <button class="botoes__calc ocultar" id="botao__limpar__campos">Limpar</button>
+        </div>
+    </section>
+    <script src="../js/scripts_calculadoras/calc_assid.js"></script>
     <script src="../js/login.js"></script>
     <footer class="rodape">
         Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>

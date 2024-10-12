@@ -12,7 +12,8 @@ function calcularCv(){
         let valorResultado = (valor2 - valor1) / valor1 * 100;
         valorResultado = valorResultado.toFixed(2).replace('.', ',');
         outputResultado.textContent = `${valorResultado}%`;
-        resultado.classList.toggle('ocultar');
+        resultado.classList.remove('ocultar');
+        botaoLimpar.classList.remove('ocultar');
     }else{
         alert('Digite um número válido!');
     }
@@ -21,7 +22,8 @@ function calcularCv(){
 function limpar(){
     inputValor1.value = "";
     inputValor2.value = "";
-    resultado.classList.toggle('ocultar');
+    resultado.classList.add('ocultar');
+    botaoLimpar.classList.add('ocultar');
     outputResultado.textContent = "";
 }
 

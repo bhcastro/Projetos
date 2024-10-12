@@ -18,12 +18,14 @@ function calcularPlaquetasCitrato(plaq) {
     let plaquetasCalculadas = (plaq * 1.1) * 1000;
     outputPlaquetasCitrato.innerText = (plaquetasCalculadas.toLocaleString('pt-BR'));
     paragrafoPlaquetasCitrato.classList.remove('ocultar');
+    botaoLimparPlaquetasCitrato.classList.remove('ocultar');
 }
 
 function zerarValoresCitrato() {
     inputPlaquetasCitrato.value = "";
     outputPlaquetasCitrato.innerText = "";
     paragrafoPlaquetasCitrato.classList.add('ocultar');
+    botaoLimparPlaquetasCitrato.classList.add('ocultar');
 }
 botaoCalcularCitrato.addEventListener('click', pegarValoresCitrato);
 botaoLimparPlaquetasCitrato.addEventListener('click', zerarValoresCitrato);

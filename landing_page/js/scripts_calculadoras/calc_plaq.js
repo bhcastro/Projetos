@@ -20,6 +20,7 @@ function calcularPlaquetas(rbc, plaq) {
     const plaquetasCalculadas = (plaq * rbc) * 1000;
     outputPlaquetas.innerText = (plaquetasCalculadas.toLocaleString('pt-BR'));
     outoutPlaquetas.classList.remove('ocultar');
+    botaoLimparPlaquetas.classList.remove('ocultar');
 }
 
 function zerarValores() {
@@ -27,6 +28,7 @@ function zerarValores() {
     inputRbc.value = "";
     outputPlaquetas.innerText = "";
     outoutPlaquetas.classList.add('ocultar');
+    botaoLimparPlaquetas.classList.add('ocultar');
 }
 botaoCalcularPlaquetas.addEventListener('click', pegarValores);
 botaoLimparPlaquetas.addEventListener('click', zerarValores);

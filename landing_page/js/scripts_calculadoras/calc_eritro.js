@@ -15,6 +15,7 @@ function calcularEritro(){
         let valorResultado = leucoTotal / eritroTotal;
         outputResultadoEritro.innerText = (valorResultado.toLocaleString('pt-BR'));
         paragrafoResultado.classList.remove('ocultar');
+        botaoLimparEritro.classList.remove('ocultar');
     }else{
         alert('Digite um número válido!');
     }
@@ -24,6 +25,7 @@ function limpar(){
     inputLeuco.value = "";
     inputEritro.value = "";
     paragrafoResultado.classList.add('ocultar');
+    botaoLimparEritro.classList.add('ocultar');
     outputResultadoEritro.innerText = "";
 }
 

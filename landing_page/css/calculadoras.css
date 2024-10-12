@@ -10,20 +10,6 @@
     border-bottom: 1px solid var(--verde-padrao);
     background-color: transparent;
 }
-.botoes__calc{
-    width: 200px;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    outline: none;
-    border-radius: 25px;
-    border: 2px solid black;
-    cursor: pointer;
-}
-.botoes__calc:hover{
-    background-color: rgba(204, 202, 202, 0.61);
-}
 
 .conteiner__calculadoras{
     background: var(--azul-hover) url(../img/logos/LabNet/default_transparent_765x625.png) no-repeat center;
