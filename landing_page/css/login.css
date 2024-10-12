@@ -36,25 +36,10 @@
     width: 250px;
     padding: 10px;
     margin: 20px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     border: none;
     outline: none;
     background-color: transparent;
     border-bottom: 2px solid var(--preto-padrao);
-}
-#botao__login{
-    cursor: pointer;
-    width: 250px;
-    padding: 10px;
-    margin: 20px;
-    font-size: 25px;
-    text-align: center;
-    outline: none;
-    background-color: var(--verde-hover);
-    border: 2px solid var(--preto-padrao);
-    border-radius: 25px;
-}
-#botao__login:hover{
-    background-color: var(--azul-hover);
 }

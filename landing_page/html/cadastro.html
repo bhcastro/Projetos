@@ -17,27 +17,33 @@
             <a href="index.html"><span class="menu__header">Home</span></a>
             <a href="calculadoras.html"><span class="menu__header">Calculadoras</span></a>
             <a href="#"><span class="menu__header">Contato</span></a>
-            <button class="button__header" id="login">Área do Analista</button>
+            <button class="button" id="login">Área do Analista</button>
         </nav>
     </header>
     <div id="div__login" class="ocultar"></div>
     <section id="popup__login" class="ocultar">
         <input id="usuario" type="text" placeholder="Usuário" autocomplete="off">
         <input id="senha" type="password" placeholder="Senha" autocomplete="off">
-        <input id="botao__login" type="submit" value="Entrar">
+        <input class="button" id="botao__login" type="submit" value="Entrar">
         <a href="#">Esqueci a senha</a>
     </section>
-    <section id="formulario__cadastro">
-        <label for="nome"><span class="dados__cadastro">Nome: </span></label><input class="inputs__cadastro" type="text" name="nome" id="nome">
-        <label for="sobrenome"><span class="dados__cadastro">Sobrenome: </span></label><input  class="inputs__cadastro"type="text" name="sobrenome" id="sobrenome">
-        <label for="email"><span class="dados__cadastro">E-mail: </span></label><input class="inputs__cadastro" type="email" name="email" id="email">
-        <label for="confirm__email"><span class="dados__cadastro">Confirme seu e-mail: </span></label><input class="inputs__cadastro" type="email" name="confirm__email" id="confirm__email">
-        <label for="senha"><span class="dados__cadastro">Senha: </span></label><input class="inputs__cadastro" type="password" name="senha__cadastro" id="senha__cadastro">
-        <label for="confirm__senha"><span class="dados__cadastro">Confirme a senha: </span></label><input class="inputs__cadastro" type="password" name="confirm__senha" id="confirm__senha">
-    </section>
+    <form action="#">
+        <section id="formulario__cadastro">
+            <input class="inputs__cadastro" type="text" name="nome" id="nome__cadastro" placeholder="Nome*" required>
+            <input  class="inputs__cadastro"type="text" name="sobrenome" id="sobrenome__cadastro" placeholder="Sobrenome*" required>
+            <input class="inputs__cadastro" type="email" name="email" id="email__cadastro" placeholder="E-mail*" required>
+            <input class="inputs__cadastro" type="email" name="confirm__email" id="confirm__email__cadastro" placeholder="Confirme seu E-mail*" required>
+            <input class="inputs__cadastro" type="password" name="senha__cadastro" id="senha__cadastro" placeholder="Senha*" required>
+            <input class="inputs__cadastro" type="password" name="confirm__senha" id="confirm__senha__cadastro" placeholder="Confirme sua senha*" required>
+            <input class="button" type="submit" value="Finalizar Cadastro" id="botao__finaliza__cadastro">
+            <abbr title="Campos obrigatórios">*Campos obrigatórios</abbr><article></article>
+        </section>
+        
+    </form>
     <script src="../js/login.js"></script>
+    <footer class="rodape">
+        Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
+    </footer>
 </body>
-<footer class="rodape">
-    Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
-</footer>
+
 </html>

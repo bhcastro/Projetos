@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>LabNet</title>
 </head>
+
 <body>
     <header>
-        <a href="#home">
+        <a href="index.html">
             <h1>LabNet</h1>
         </a>
         <nav id="home">
-            <a href="#home"><span class="menu__header">Home</span></a>
+            <a href="index.html"><span class="menu__header">Home</span></a>
             <a href="calculadoras.html"><span class="menu__header">Calculadoras</span></a>
             <a href="#"><span class="menu__header">Contato</span></a>
-            <a href="#" class="button__header" id="cadastrar">Cadastrar</a>
-            <button class="button__header" id="login">Área do Analista</button>
+            <a href="cadastro.html" class="button" id="cadastrar">Cadastrar</a>
+            <button class="button" id="login">Área do Analista</button>
         </nav>
     </header>
     <div id="div__login" class="ocultar"></div>
     <section id="popup__login" class="ocultar">
         <input id="usuario" type="text" placeholder="Usuário" autocomplete="off">
         <input id="senha" type="password" placeholder="Senha" autocomplete="off">
-        <input id="botao__login" type="submit" value="Entrar">
+        <input class="button" id="botao__login" type="submit" value="Entrar">
         <a href="#">Esqueci a senha</a>
     </section>
     <script src="../js/login.js"></script>
+    <footer class="rodape">
+        Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
+    </footer>
 </body>
-<footer class="rodape">
-    Desenvolvido por Bruno Castro&nbsp;<a target="_blank" href="https://github.com/bhcastro/"><img src="../img/github.png" alt="GitHub" id="github"></a>
-</footer>
+
 </html>

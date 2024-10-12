@@ -1,0 +1,55 @@
+
+.button{
+    margin: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 160px;
+    cursor: pointer;
+    background-color: var(--azul-contraste);
+    color: var(--branco-padrao);
+    padding: 10px;
+    border: 2px solid var(--branco-padrao);
+    border-radius: 20px;
+}
+#cadastrar{
+    background-color: var(--branco-padrao);
+    color: var(--azul-contraste);
+    border: 2px solid var(--azul-contraste);
+}
+#cadastrar:hover{
+    background-color: var(--azul-contraste);
+    color: var(--branco-padrao);
+    border: 2px solid var(--branco-padrao);
+    transition: 1s;
+}
+#login:hover{
+    background-color: var(--branco-padrao);
+    color: var(--azul-contraste);
+    border: 2px solid var(--azul-contraste);
+    transition: 0.6s;
+}
+#botao__login{
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    background-color: var(--verde-hover);
+    border: 2px solid var(--preto-padrao);
+    border-radius: 25px;
+}
+#botao__login:hover{
+    background-color: var(--azul-hover);
+}
+
+#botao__finaliza__cadastro{
+    width: 200px;
+    font-size: 1.2em;
+}
+
+    #botao__finaliza__cadastro:hover{
+    background-color: var(--branco-padrao);
+    color: var(--azul-contraste);
+    border: 2px solid var(--azul-contraste);
+    transition: 0.6s;
+    }
